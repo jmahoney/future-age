@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feed</th>
+      <th>Title</th>
+      <th>Content html</th>
+      <th>Url</th>
+      <th>External url</th>
+      <th>Summary</th>
+      <th>Date published</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.feed_id %></td>
+        <td><%= item.title %></td>
+        <td><%= item.content_html %></td>
+        <td><%= item.url %></td>
+        <td><%= item.external_url %></td>
+        <td><%= item.summary %></td>
+        <td><%= item.date_published %></td>
+        <td><%= link_to 'Show', item %></td>
+        <td><%= link_to 'Edit', edit_item_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item', new_item_path %>
