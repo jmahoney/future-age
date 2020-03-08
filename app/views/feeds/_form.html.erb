@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :status %>
-    <%= form.text_field :status %>
+    <%= form.select :status, options_for_select(Feed.statuses.keys.to_a) %>
   </div>
 
   <div class="actions">

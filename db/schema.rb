@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_03_08_081125) do
     t.string "name"
     t.string "website_url"
     t.datetime "last_checked"
-    t.string "status"
+    t.integer "status", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

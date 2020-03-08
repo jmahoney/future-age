@@ -5,8 +5,7 @@ class CreateFeeds < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :website_url
       t.datetime :last_checked
-      t.string :status
-
+      t.integer :status, :default => 0
       t.timestamps
     end
   end
