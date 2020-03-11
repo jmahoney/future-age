@@ -16,23 +16,27 @@ ActiveRecord::Schema.define(version: 2020_03_08_081125) do
   enable_extension "plpgsql"
 
   create_table "feeds", force: :cascade do |t|
-    t.string "url"
+    t.string "url", null: false
     t.string "name"
     t.string "website_url"
     t.datetime "last_checked"
     t.integer "status", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["status"], name: "index_feeds_on_status"
   end
 
   create_table "items", force: :cascade do |t|
     t.integer "feed_id"
+    t.string "unique_identifier", null: false
     t.string "title"
     t.text "content_html"
     t.string "url"
     t.string "external_url"
     t.text "summary"
     t.datetime "date_published"
+    t.boolean "starred"
+    t.boolean "read"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
