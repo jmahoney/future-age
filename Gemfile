@@ -30,8 +30,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'dotenv-rails', groups: [:development, :test]
-gem 'httparty'
-gem 'feedjira'
+gem 'httparty', '>= 0.18'
+gem 'feedjira', '>= 3.1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

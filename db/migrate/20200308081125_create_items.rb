@@ -9,8 +9,8 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.string :external_url
       t.text :summary
       t.datetime :date_published
-      t.boolean :starred
-      t.boolean :read
+      t.boolean :starred, default: false 
+      t.boolean :read, default: false
       t.timestamps
     end
   end

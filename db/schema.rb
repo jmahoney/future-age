@@ -35,8 +35,8 @@ ActiveRecord::Schema.define(version: 2020_03_08_081125) do
     t.string "external_url"
     t.text "summary"
     t.datetime "date_published"
-    t.boolean "starred"
-    t.boolean "read"
+    t.boolean "starred", default: false
+    t.boolean "read", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

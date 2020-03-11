@@ -85,7 +85,7 @@ GEM
     ffi (1.12.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    httparty (0.17.3)
+    httparty (0.18.0)
       mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
     i18n (1.8.2)
@@ -220,8 +220,8 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   dotenv-rails
-  feedjira
-  httparty
+  feedjira (>= 3.1.1)
+  httparty (>= 0.18)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
