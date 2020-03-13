@@ -2,16 +2,16 @@
 
 one:
   id: 1
-  url: MyString
-  name: MyString
-  website_url: MyString
+  url: https://1.test.com/feed
+  name: Site 1
+  website_url: https://1.test.com/
   last_checked: 2020-03-08 07:39:59
-  status: MyString
+  status: 0
 
 two:
   id: 2
-  url: MyString
-  name: MyString
-  website_url: MyString
+  url: https://2.test.com/feed
+  name: Site 2
+  website_url: https://2.test.com/
   last_checked: 2020-03-08 07:39:59
-  status: MyString
+  status: 0

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:georss="http://www.georss.org/georss" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>cheers, chopper</title>
+	<atom:link href="https://cheerschopper.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://cheerschopper.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 03 Mar 2020 08:52:57 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>http://wordpress.com/</generator>
+
+<image>
+	<url>https://cheerschopper.files.wordpress.com/2019/03/cropped-small-dog-riding-big-dog.jpg?w=32</url>
+	<title>cheers, chopper</title>
+	<link>https://cheerschopper.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<cloud domain='cheerschopper.com' port='80' path='/?rsscloud=notify' registerProcedure='' protocol='http-post' />
+<atom:link rel="search" type="application/opensearchdescription+xml" href="https://cheerschopper.com/osd.xml" title="cheers, chopper" />
+	<atom:link rel='hub' href='https://cheerschopper.com/?pushpress=hub'/>
+	<item>
+		<title>February Tracks, 2020</title>
+		<link>https://cheerschopper.com/2020/03/03/february-tracks-2020/</link>
+					<comments>https://cheerschopper.com/2020/03/03/february-tracks-2020/#respond</comments>
+		
+		<dc:creator><![CDATA[Joe Mahoney]]></dc:creator>
+		<pubDate>Tue, 03 Mar 2020 08:52:57 +0000</pubDate>
+				<category><![CDATA[Music]]></category>
+		<category><![CDATA[David Roback]]></category>
+		<category><![CDATA[ifttt]]></category>
+		<category><![CDATA[Louis Armstrong]]></category>
+		<category><![CDATA[Mazzy Star]]></category>
+		<category><![CDATA[monthly tracks]]></category>
+		<category><![CDATA[playlist]]></category>
+		<category><![CDATA[Shooter Jennings]]></category>
+		<category><![CDATA[spotify]]></category>
+		<guid isPermaLink="false">http://cheerschopper.com/?p=438</guid>
+
+					<description><![CDATA[I use an IFTTT applet that adds tracks that I’ve saved on Spotify to a monthly playlist. In February I tapped the heart icon 24 times. Another relatively eclectic mix, I guess. My favourite &#8220;new to me&#8221; track is Shooter Jennings&#8217;s cover of Walk Of Life. That was my first ever favourite song. I was &#8230; <a href="https://cheerschopper.com/2020/03/03/february-tracks-2020/" class="more-link">Continue reading <span class="screen-reader-text">February Tracks, 2020</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image"><a href="https://open.spotify.com/album/46nIMULdlEGXUJYAfBhi7C"><img src="https://www.rollingstone.com/wp-content/uploads/2018/08/shooter.png?resize=1800,1200&amp;w=1800" alt="Listen to The Wolf by Shooter Jennings on Spotify" /></a></figure>
+
+
+
+<p><em>I use an<a href="https://ifttt.com/applets/rC5QtGu6-add-saved-songs-to-a-monthly-playlist"> IFTTT applet</a> that adds tracks that I’ve saved on Spotify to a monthly playlist. <a href="https://open.spotify.com/playlist/3uKBtzSWzbU1h63YGH0waO">In February I tapped the heart icon 24 times</a>.</em></p>
+
+
+
+<p>Another relatively eclectic mix, I guess. </p>
+
+
+
+<p>My favourite &#8220;new to me&#8221; track is Shooter Jennings&#8217;s cover of <em>Walk Of Life</em>. That was my first ever favourite song. I was ten and I danced with a girl I &#8220;liked&#8221; while it played. This version is fucking great.</p>
+
+
+
+<figure class="wp-block-image"><a href="https://open.spotify.com/album/5zYrdM5vkTrLL2BSL2WIMx"><img src="https://images-na.ssl-images-amazon.com/images/I/71UEWzyRw-L._SL1082_.jpg" alt="Listen to Satch Plays Fats by Louis Armstrong on Spotify" /></a></figure>
+
+
+
+<p>After watching a bunch of <a href="https://www.amoeba.com/whats-in-my-bag/">Amoeba Records <em>What&#8217;s In My Bag</em> videos</a>, I went on a <em>Satch Plays Fats</em> kick for a few days. A few tracks are from that rabbit hole.</p>
+
+
+
+<p> <em>Fade Into You</em> wasn&#8217;t already in my liked tracks and the day I after I added it <a href="https://www.nytimes.com/2020/02/26/arts/music/david-roback-dead.html">the news that David Roback had died </a>came out.</p>
+
+
+
+<p>You can listen to the <a href="https://open.spotify.com/playlist/3uKBtzSWzbU1h63YGH0waO">full playlist</a> below.</p>
+
+
+
+<figure class="wp-block-embed-spotify wp-block-embed is-type-rich wp-embed-aspect-9-16 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="embed-spotify"><iframe title="Spotify Embed: February &#039;20" width="300" height="380" allowtransparency="true" frameborder="0" allow="encrypted-media" src="https://open.spotify.com/embed/playlist/3uKBtzSWzbU1h63YGH0waO"></iframe></div>
+</div></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://cheerschopper.com/2020/03/03/february-tracks-2020/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		
+		<media:content url="https://0.gravatar.com/avatar/9e19cf505a1d8f88f97556d2287f456f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">Joe</media:title>
+		</media:content>
+
+		<media:content url="https://www.rollingstone.com/wp-content/uploads/2018/08/shooter.png?resize=1800,1200&#038;w=1800" medium="image">
+			<media:title type="html">Listen to The Wolf by Shooter Jennings on Spotify</media:title>
+		</media:content>
+
+		<media:content url="https://images-na.ssl-images-amazon.com/images/I/71UEWzyRw-L._SL1082_.jpg" medium="image">
+			<media:title type="html">Listen to Satch Plays Fats by Louis Armstrong on Spotify</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Ten Years of Terrible Games</title>
+		<link>https://cheerschopper.com/2020/02/17/ten-years-of-terrible-games/</link>
+		
+		<dc:creator><![CDATA[Joe Mahoney]]></dc:creator>
+		<pubDate>Mon, 17 Feb 2020 07:41:46 +0000</pubDate>
+				<category><![CDATA[Video Games]]></category>
+		<category><![CDATA[indie games]]></category>
+		<category><![CDATA[talks]]></category>
+		<category><![CDATA[Zach Barth]]></category>
+		<guid isPermaLink="false">http://cheerschopper.com/?p=431</guid>
+
+					<description><![CDATA[Brendy, formerly of Rock Paper Shotgun, always recommended Zachtronics games on the RPS Podcast. I&#8217;ve yet to play one, but I very much enjoyed listening to this talk Zach Barth gave at Google about ten years of working on different games. I say listened because the actual filming didn&#8217;t lend itself to fun viewing. Also, &#8230; <a href="https://cheerschopper.com/2020/02/17/ten-years-of-terrible-games/" class="more-link">Continue reading <span class="screen-reader-text">Ten Years of Terrible&#160;Games</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-embed-youtube wp-block-embed is-type-rich wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe class='youtube-player' type='text/html' width='1100' height='619' src='https://www.youtube.com/embed/Df9pz_EmKhA?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>
+</div></figure>
+
+
+
+<p><a href="https://twitter.com/Brendy_C/">Brendy</a>, formerly of Rock Paper Shotgun, always recommended Zachtronics games on the RPS Podcast. I&#8217;ve yet to play one, but I very much enjoyed listening to <a href="https://www.youtube.com/watch?v=Df9pz_EmKhA">this talk Zach Barth gave at Google about ten years of working on different games</a>.  </p>
+
+
+
+<p>I say listened because the actual filming didn&#8217;t lend itself to fun viewing.  </p>
+
+
+
+<p>Also, Zach Barth is not <a href="http://www.stfj.net/">Zach Gage</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		
+		<media:content url="https://0.gravatar.com/avatar/9e19cf505a1d8f88f97556d2287f456f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">Joe</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>The Mountain Goats live, 2008</title>
+		<link>https://cheerschopper.com/2020/02/10/the-mountain-goats-live-2008/</link>
+		
+		<dc:creator><![CDATA[Joe Mahoney]]></dc:creator>
+		<pubDate>Mon, 10 Feb 2020 09:45:47 +0000</pubDate>
+				<category><![CDATA[Music]]></category>
+		<category><![CDATA[john darnielle]]></category>
+		<category><![CDATA[live music]]></category>
+		<category><![CDATA[mountain goats]]></category>
+		<guid isPermaLink="false">http://cheerschopper.com/?p=428</guid>
+
+					<description><![CDATA[Setlist: 0:00:00 &#8211; Michael Myers Resplendent 0:02:32 &#8211; Heretic Pride 0:06:46 &#8211; You Or Your Memory 0:09:24 &#8211; Quito 0:12:05 &#8211; Sax Rohmer #1 0:16:25 &#8211; Marduk T-Shirt Men&#8217;s Room Incident 0:20:46 &#8211; So Desperate 0:24:34 &#8211; Raja Vocative 0:26:45 &#8211; I&#8217;ve Got The Sex 0:29:11 &#8211; Downtown Seoul 0:32:25 &#8211; Talking In Your Sleep &#8230; <a href="https://cheerschopper.com/2020/02/10/the-mountain-goats-live-2008/" class="more-link">Continue reading <span class="screen-reader-text">The Mountain Goats live,&#160;2008</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-embed-youtube wp-block-embed is-type-rich wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe class='youtube-player' type='text/html' width='1100' height='619' src='https://www.youtube.com/embed/kpTolrSnkqI?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>
+</div><figcaption><a href="https://www.youtube.com/watch?v=kpTolrSnkqI">Who doesn&#8217;t like live indie rock?</a></figcaption></figure>
+
+
+
+<p>Setlist: <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=0s">0:00:00</a> &#8211; Michael Myers Resplendent <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=152s">0:02:32</a> &#8211; Heretic Pride <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=406s">0:06:46</a> &#8211; You Or Your Memory <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=564s">0:09:24</a> &#8211; Quito <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=725s">0:12:05</a> &#8211; Sax Rohmer #1 <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=985s">0:16:25</a> &#8211; Marduk T-Shirt Men&#8217;s Room Incident <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=1246s">0:20:46</a> &#8211; So Desperate <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=1474s">0:24:34</a> &#8211; Raja Vocative <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=1605s">0:26:45</a> &#8211; I&#8217;ve Got The Sex <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=1751s">0:29:11</a> &#8211; Downtown Seoul <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=1945s">0:32:25</a> &#8211; Talking In Your Sleep <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=2065s">0:34:25</a> &#8211; In The Craters On The Moon <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=2303s">0:38:23</a> &#8211; Dilaudid <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=2468s">0:41:08</a> &#8211; Sept 15 1983 <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=2729s">0:45:29</a> &#8211; Lovecraft In Brooklyn <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=3010s">0:50:10</a> &#8211; See America Right <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=3137s">0:52:17</a> &#8211; House Guest <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=3445s">0:57:25</a> &#8211; This Year <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=3696s">1:01:36</a> &#8211; California Song <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=3900s">1:05:00</a> &#8211; The Sign <br><a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=4235s">1:10:35</a> &#8211; The Best Ever Death Metal Band In Denton</p>
+
+
+
+<p>John Darnielle and company put a lot of great songs into just over an hour. I&#8217;m still pretty new to the Mountain Goats canon so a lot of these tracks were new to me. <a href="https://www.youtube.com/watch?v=kpTolrSnkqI&amp;t=985s">House Guest</a> is a new favourite</p>
+]]></content:encoded>
+					
+		
+		
+		
+		<media:content url="https://0.gravatar.com/avatar/9e19cf505a1d8f88f97556d2287f456f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">Joe</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>January Tracks, 2020</title>
+		<link>https://cheerschopper.com/2020/02/07/january-tracks-2020/</link>
+		
+		<dc:creator><![CDATA[Joe Mahoney]]></dc:creator>
+		<pubDate>Fri, 07 Feb 2020 07:57:48 +0000</pubDate>
+				<category><![CDATA[Music]]></category>
+		<category><![CDATA[Hayley Mary]]></category>
+		<category><![CDATA[monthly tracks]]></category>
+		<category><![CDATA[Pearl Jam]]></category>
+		<category><![CDATA[playlist]]></category>
+		<category><![CDATA[spotify]]></category>
+		<category><![CDATA[wilco]]></category>
+		<guid isPermaLink="false">http://cheerschopper.com/?p=422</guid>
+
+					<description><![CDATA[I use an IFTTT applet that adds tracks that I’ve saved on Spotify to a monthly playlist. In January I tapped the heart icon 14 times. January was a month of camping and travel. I didn&#8217;t play a whole lot of stuff deliberately until the last few days when I went of something of a &#8230; <a href="https://cheerschopper.com/2020/02/07/january-tracks-2020/" class="more-link">Continue reading <span class="screen-reader-text">January Tracks, 2020</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img data-attachment-id="424" data-permalink="https://cheerschopper.com/07_wilco-the-album-1024x1024-1/" data-orig-file="https://cheerschopper.files.wordpress.com/2020/02/07_wilco-the-album-1024x1024-1.jpg" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="07_wilco-the-album-1024&#215;1024-1" data-image-description="" data-medium-file="https://cheerschopper.files.wordpress.com/2020/02/07_wilco-the-album-1024x1024-1.jpg?w=300" data-large-file="https://cheerschopper.files.wordpress.com/2020/02/07_wilco-the-album-1024x1024-1.jpg?w=1024" src="https://cheerschopper.files.wordpress.com/2020/02/07_wilco-the-album-1024x1024-1.jpg?w=1024" alt="" class="wp-image-424" srcset="https://cheerschopper.files.wordpress.com/2020/02/07_wilco-the-album-1024x1024-1.jpg 1024w, https://cheerschopper.files.wordpress.com/2020/02/07_wilco-the-album-1024x1024-1.jpg?w=150 150w, https://cheerschopper.files.wordpress.com/2020/02/07_wilco-the-album-1024x1024-1.jpg?w=300 300w, https://cheerschopper.files.wordpress.com/2020/02/07_wilco-the-album-1024x1024-1.jpg?w=768 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p><em>I use an<a href="https://ifttt.com/applets/rC5QtGu6-add-saved-songs-to-a-monthly-playlist"> IFTTT applet</a> that adds tracks that I’ve saved on Spotify to a monthly playlist. <a href="https://open.spotify.com/playlist/11XZd4dEegQ13mL8kKutFT">In January I tapped the heart icon 14 times</a>.</em></p>
+
+
+
+<p>January was a month of camping and travel. I didn&#8217;t play a whole lot of stuff deliberately until the last few days when I went of something of a later-Wilco trip, triggered by getting <a href="https://www.uncut.co.uk/news/introducing-uncuts-amazing-wilco-themed-cover-cd-112068/">a copy of Uncut magazine&#8217;s Wilcovered covers collection.</a></p>
+
+
+
+<p>I&#8217;ve been <em>Wilco (The Album)</em>  the short shrift for a decade. It&#8217;s an excellent collection of songs and stands up as well as anything Wilco have put out. Tracks from it make up half the playlist. <em>Bull Black Nova</em> is probably my favourite.</p>
+
+
+
+<p>Pearl Jam released <em>Dance Of The Claiirvoyants</em> in January. Pearl Jame are trying a new direction and style with this track. I listened to it a few times the day it came out and liked it. But I couldn&#8217;t even hum it now, so maybe tapping the heart icon was premature?</p>
+
+
+
+<p>The rest of the top tracks are a hangover from sitting in the sun with random &#8220;radio&#8221; streams on in the background. Favourite among those is <em>Holly</em> by  Aussie muso Hayley Mary.</p>
+
+
+
+<figure class="wp-block-embed-spotify wp-block-embed is-type-rich wp-embed-aspect-9-16 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="embed-spotify"><iframe title="Spotify Embed: January &#039;20" width="300" height="380" allowtransparency="true" frameborder="0" allow="encrypted-media" src="https://open.spotify.com/embed/playlist/6x1DMycho843H8jBVdYXUu"></iframe></div>
+</div></figure>
+]]></content:encoded>
+					
+		
+		
+		
+		<media:content url="https://0.gravatar.com/avatar/9e19cf505a1d8f88f97556d2287f456f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">Joe</media:title>
+		</media:content>
+
+		<media:content url="https://cheerschopper.files.wordpress.com/2020/02/07_wilco-the-album-1024x1024-1.jpg?w=1024" medium="image" />
+	</item>
+		<item>
+		<title>Read the Jackson Lamb novels</title>
+		<link>https://cheerschopper.com/2020/02/04/read-the-jackson-lamb-novels/</link>
+		
+		<dc:creator><![CDATA[Joe Mahoney]]></dc:creator>
+		<pubDate>Tue, 04 Feb 2020 09:44:16 +0000</pubDate>
+				<category><![CDATA[Reading]]></category>
+		<category><![CDATA[Jackson Lamb]]></category>
+		<category><![CDATA[Mick Herron]]></category>
+		<category><![CDATA[slough house]]></category>
+		<category><![CDATA[spy novels]]></category>
+		<category><![CDATA[warren ellis]]></category>
+		<guid isPermaLink="false">http://cheerschopper.com/?p=416</guid>
+
+					<description><![CDATA[A birdy tells me you’ve got one of mine in your lock-up.”“That would be River Cartwright.”“Yes, but don’t blame me. I think his mother was a hippy.”“Smoke a lot of dope while he was in the womb, did she? That might explain today’s dipshit behaviour. And I thought he was one of your cleverer boys.”“Mind &#8230; <a href="https://cheerschopper.com/2020/02/04/read-the-jackson-lamb-novels/" class="more-link">Continue reading <span class="screen-reader-text">Read the Jackson Lamb&#160;novels</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<blockquote class="wp-block-quote"><p>A birdy tells me you’ve got one of mine in your lock-up.”<br>“That would be River Cartwright.”<br>“Yes, but don’t blame me. I think his mother was a hippy.”<br>“Smoke a lot of dope while he was in the womb, did she? That might explain today’s dipshit behaviour. And I thought he was one of your cleverer boys.”<br>“Mind like a razor,” Lamb agreed. “Disposable.</p></blockquote>
+
+
+
+<p>Per <a href="https://warrenellis.ltd/books/slow-horses/">Warren Ellis’s advice</a> I&#8217;ve been working my way through Mick Herron&#8217;s Jackson Lamb/Slough House novels over the last four months. Here&#8217;s Mr Ellis&#8217;s summary:</p>
+
+
+
+<p><em>The Security Service, known popularly as MI5, sometimes can’t outright fire people.  Political reasons, operational reasons.  But it would still like to get rid of them. So it puts them in Slough House, a dismal set of offices intended to make those consigned there so miserable that they just quit.  Those people are known as slow horses. Slough House, slow horse.  Slough House is run by Jackson Lamb, himself a slow horse of mysterious provenance, an impressively offensive creature who looks a bit like Timothy Spall if you stuffed Timothy Spall with old pork fat and left him out in the rain for six weeks.</em></p>
+
+
+
+<p>I liken the novels to <a href="https://en.wikipedia.org/wiki/Bernard_Samson">Len Deighton&#8217;s Bernard Samson novels</a> but brought into the Brexit age and with a bit of The Office thrown in. They are enormously enjoyable; funny and smart and, occasionally, shocking. </p>
+
+
+
+<p>I&#8217;ve actually been listening to the novels <a href="https://www.audible.com.au/pd/Slow-Horses-Audiobook/B00FO7F4GE">via Audible</a>. All so far have been narrated by <a href="https://en.wikipedia.org/wiki/Se%C3%A1n_Barrett_(actor)">Seán Barrett</a>, who lends something almost like a sense of authenticity to the story. Each passage of the book is written from someone&#8217;s point of view and Barrett is easily able to capture the differences in tone and perspective. And his Jackson Lamb is perfect. </p>
+
+
+
+<p>I have two novels to go out of the six currently in print. There hasn&#8217;t been a stinker yet. Highly recommended.</p>
+]]></content:encoded>
+					
+		
+		
+		
+		<media:content url="https://0.gravatar.com/avatar/9e19cf505a1d8f88f97556d2287f456f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">Joe</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Angry folk follow legendary comic artist into container, yell at him.</title>
+		<link>https://cheerschopper.com/2020/01/26/bill-sienkiewicz-street-spirit-cover/</link>
+		
+		<dc:creator><![CDATA[Joe Mahoney]]></dc:creator>
+		<pubDate>Sun, 26 Jan 2020 08:51:01 +0000</pubDate>
+				<category><![CDATA[Comics]]></category>
+		<category><![CDATA[Music]]></category>
+		<category><![CDATA[bill sienkiewicz]]></category>
+		<category><![CDATA[covers]]></category>
+		<category><![CDATA[radiohead]]></category>
+		<category><![CDATA[stereogum]]></category>
+		<guid isPermaLink="false">http://cheerschopper.com/?p=402</guid>
+
+					<description><![CDATA[Recently Stereogum posted a short article about members of System of A Down and Avenged Sevenfold covering Radiohead&#8217;s Street Spirit (Fade Out). I&#8217;m always up for a Radiohead cover so I bookmarked the page and finally watched it this evening and commented on the post: This version is not for me but I was stoked &#8230; <a href="https://cheerschopper.com/2020/01/26/bill-sienkiewicz-street-spirit-cover/" class="more-link">Continue reading <span class="screen-reader-text">Angry folk follow legendary comic artist into container, yell at&#160;him.</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>Recently Stereogum posted a short article about members of System of A Down and Avenged Sevenfold covering Radiohead&#8217;s Street Spirit (Fade Out). I&#8217;m always up for a Radiohead cover so I bookmarked the page and finally watched it this evening and <a href="https://www.stereogum.com/2071009/hear-system-of-a-downs-john-dolmayan-cover-radiohead-with-tom-morello/video/#comment-20781658">commented on the post</a>:</p>
+
+
+
+<blockquote class="wp-block-quote"><p>This version is not for me but I was stoked to see that the artist painting a excellent portrait of Radiohead is <a href="https://en.wikipedia.org/wiki/Bill_Sienkiewicz">Bill Sienkiewicz</a>, one of my favourite comics artists ever. I don&#8217;t know why they were yelling at him in a container, though. That&#8217;s impolite.</p></blockquote>
+
+
+
+<p><a href="https://youtu.be/8xvNSoXTB9Q">The cover of Street Spirit</a> is pretty grim. You&#8217;re better off watching <a href="https://radiohead.com/library#tkol/2012-03-06-austin-city-limits">pretty much anything</a> on the new <a href="https://radiohead.com/library#ir">Radiohead Public Library archive</a>.</p>
+
+
+
+<figure class="wp-block-embed-youtube wp-block-embed is-type-rich wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe class='youtube-player' type='text/html' width='1100' height='619' src='https://www.youtube.com/embed/8xvNSoXTB9Q?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe>
+</div></figure>
+]]></content:encoded>
+					
+		
+		
+		
+		<media:content url="https://0.gravatar.com/avatar/9e19cf505a1d8f88f97556d2287f456f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">Joe</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>December Tracks, 2019</title>
+		<link>https://cheerschopper.com/2020/01/23/december-tracks-2019/</link>
+		
+		<dc:creator><![CDATA[Joe Mahoney]]></dc:creator>
+		<pubDate>Thu, 23 Jan 2020 08:55:32 +0000</pubDate>
+				<category><![CDATA[Music]]></category>
+		<category><![CDATA[ifttt]]></category>
+		<category><![CDATA[jarvis cocker]]></category>
+		<category><![CDATA[monthly tracks]]></category>
+		<category><![CDATA[playlist]]></category>
+		<category><![CDATA[spotify]]></category>
+		<category><![CDATA[tom waits]]></category>
+		<category><![CDATA[unknown mortal orchestra]]></category>
+		<guid isPermaLink="false">http://cheerschopper.com/?p=394</guid>
+
+					<description><![CDATA[I use an IFTTT applet that adds tracks that I’ve saved on Spotify to a monthly playlist. In December I tapped the heart icon 14 times. I haven&#8217;t gone back and listened to this playlist yet. Much of December&#8217;s listening was Spotify radio tunes and nostalgic tunes to keep the mood up as the year &#8230; <a href="https://cheerschopper.com/2020/01/23/december-tracks-2019/" class="more-link">Continue reading <span class="screen-reader-text">December Tracks, 2019</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p><em>I use an<a href="https://ifttt.com/applets/rC5QtGu6-add-saved-songs-to-a-monthly-playlist"> IFTTT applet</a> that adds tracks that I’ve saved on Spotify to a monthly playlist. <a href="https://open.spotify.com/playlist/11XZd4dEegQ13mL8kKutFT">In December I tapped the heart icon 14 times</a>. </em></p>
+
+
+
+<p>I haven&#8217;t gone back and listened to this playlist yet. Much of December&#8217;s listening was Spotify radio tunes and nostalgic tunes to keep the mood up as the year wound down. </p>
+
+
+
+<p>I have to hand it to Jarvis Cocker for making <a href="https://open.spotify.com/track/3vHqlBYlLgog7dOJn8K0Tu">a great singalong chorus that I&#8217;ll pretty much never be able to sing in the car with my kids</a>. I&#8217;ll count Running The world as my favourite. What&#8217;s He Building? by Tom Waits confused my kids. FFunny FFriends by Unknown Mortal Orchestra was their favourite. </p>
+
+
+
+<figure class="wp-block-embed-spotify wp-block-embed is-type-rich wp-embed-aspect-9-16 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="embed-spotify"><iframe title="Spotify Embed: December &#039;19" width="300" height="380" allowtransparency="true" frameborder="0" allow="encrypted-media" src="https://open.spotify.com/embed/playlist/11XZd4dEegQ13mL8kKutFT"></iframe></div>
+</div></figure>
+]]></content:encoded>
+					
+		
+		
+		
+		<media:content url="https://0.gravatar.com/avatar/9e19cf505a1d8f88f97556d2287f456f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">Joe</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>How I ended 2019 in a few photos</title>
+		<link>https://cheerschopper.com/2020/01/01/how-i-ended-2019-in-a-few-photos/</link>
+		
+		<dc:creator><![CDATA[Joe Mahoney]]></dc:creator>
+		<pubDate>Tue, 31 Dec 2019 22:34:54 +0000</pubDate>
+				<category><![CDATA[Miscellany]]></category>
+		<guid isPermaLink="false">http://cheerschopper.com/2020/01/01/how-i-ended-2019-in-a-few-photos/</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image"><img data-attachment-id="389" data-permalink="https://cheerschopper.com/2020/01/01/how-i-ended-2019-in-a-few-photos/ae6d216b-1bc9-4fa5-9e24-e65649342486/" data-orig-file="https://cheerschopper.files.wordpress.com/2020/01/ae6d216b-1bc9-4fa5-9e24-e65649342486.jpg" data-orig-size="3024,4032" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;1.8&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone XR&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1577722507&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.25&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.015384615384615&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="ae6d216b-1bc9-4fa5-9e24-e65649342486" data-image-description="" data-medium-file="https://cheerschopper.files.wordpress.com/2020/01/ae6d216b-1bc9-4fa5-9e24-e65649342486.jpg?w=225" data-large-file="https://cheerschopper.files.wordpress.com/2020/01/ae6d216b-1bc9-4fa5-9e24-e65649342486.jpg?w=768" src="https://cheerschopper.files.wordpress.com/2020/01/ae6d216b-1bc9-4fa5-9e24-e65649342486.jpg" alt="" class="wp-image-389" /><figcaption>A Deconstructed Shandy </figcaption></figure>
+
+
+
+<figure class="wp-block-image"><img data-attachment-id="392" data-permalink="https://cheerschopper.com/2020/01/01/how-i-ended-2019-in-a-few-photos/608bb06c-a000-4354-b849-1bbaca70101e/" data-orig-file="https://cheerschopper.files.wordpress.com/2020/01/608bb06c-a000-4354-b849-1bbaca70101e.jpg" data-orig-size="3032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;1.8&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone XR&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1577717397&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.25&quot;,&quot;iso&quot;:&quot;25&quot;,&quot;shutter_speed&quot;:&quot;0.00025400050800102&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="608bb06c-a000-4354-b849-1bbaca70101e" data-image-description="" data-medium-file="https://cheerschopper.files.wordpress.com/2020/01/608bb06c-a000-4354-b849-1bbaca70101e.jpg?w=300" data-large-file="https://cheerschopper.files.wordpress.com/2020/01/608bb06c-a000-4354-b849-1bbaca70101e.jpg?w=1024" src="https://cheerschopper.files.wordpress.com/2020/01/608bb06c-a000-4354-b849-1bbaca70101e.jpg" alt="" class="wp-image-392" /><figcaption>You have a beer at the top. It’s the rules. </figcaption></figure>
+
+
+
+<figure class="wp-block-image"><img data-attachment-id="390" data-permalink="https://cheerschopper.com/2020/01/01/how-i-ended-2019-in-a-few-photos/img_0676/" data-orig-file="https://cheerschopper.files.wordpress.com/2020/01/img_0676.jpg" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;1.8&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone XR&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1577634578&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.25&quot;,&quot;iso&quot;:&quot;25&quot;,&quot;shutter_speed&quot;:&quot;0.00039292730844794&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="img_0676" data-image-description="" data-medium-file="https://cheerschopper.files.wordpress.com/2020/01/img_0676.jpg?w=300" data-large-file="https://cheerschopper.files.wordpress.com/2020/01/img_0676.jpg?w=1024" src="https://cheerschopper.files.wordpress.com/2020/01/img_0676.jpg" alt="" class="wp-image-390" /><figcaption>Loading kayaks</figcaption></figure>
+
+
+
+<figure class="wp-block-image"><img data-attachment-id="391" data-permalink="https://cheerschopper.com/2020/01/01/how-i-ended-2019-in-a-few-photos/img_0693/" data-orig-file="https://cheerschopper.files.wordpress.com/2020/01/img_0693.jpg" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;1.8&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;iPhone XR&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1577787333&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.25&quot;,&quot;iso&quot;:&quot;25&quot;,&quot;shutter_speed&quot;:&quot;0.00011499540018399&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="img_0693" data-image-description="" data-medium-file="https://cheerschopper.files.wordpress.com/2020/01/img_0693.jpg?w=300" data-large-file="https://cheerschopper.files.wordpress.com/2020/01/img_0693.jpg?w=1024" src="https://cheerschopper.files.wordpress.com/2020/01/img_0693.jpg" alt="" class="wp-image-391" /><figcaption>Quiet morning looking at Tonga Island</figcaption></figure>
+]]></content:encoded>
+					
+		
+		
+		
+		<media:content url="https://0.gravatar.com/avatar/9e19cf505a1d8f88f97556d2287f456f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">Joe</media:title>
+		</media:content>
+
+		<media:content url="https://cheerschopper.files.wordpress.com/2020/01/ae6d216b-1bc9-4fa5-9e24-e65649342486.jpg" medium="image" />
+
+		<media:content url="https://cheerschopper.files.wordpress.com/2020/01/608bb06c-a000-4354-b849-1bbaca70101e.jpg" medium="image" />
+
+		<media:content url="https://cheerschopper.files.wordpress.com/2020/01/img_0676.jpg" medium="image" />
+
+		<media:content url="https://cheerschopper.files.wordpress.com/2020/01/img_0693.jpg" medium="image" />
+	</item>
+		<item>
+		<title>Top Songs of 2019</title>
+		<link>https://cheerschopper.com/2019/12/13/top-songs-of-2019/</link>
+		
+		<dc:creator><![CDATA[Joe Mahoney]]></dc:creator>
+		<pubDate>Fri, 13 Dec 2019 08:24:43 +0000</pubDate>
+				<category><![CDATA[Music]]></category>
+		<category><![CDATA[Bananarama]]></category>
+		<category><![CDATA[Hawksley Workman]]></category>
+		<category><![CDATA[Margaret Glaspy]]></category>
+		<category><![CDATA[spotify]]></category>
+		<category><![CDATA[The National]]></category>
+		<guid isPermaLink="false">http://cheerschopper.com/?p=387</guid>
+
+					<description><![CDATA[In early December Spotify compiled my Top Songs of 2019. Leaving aside there is a whole bloody month to go, the results were a little surprising. Venus by Bananarama took the top spot, followed by Battlefords by Hawksley Workman. Tay-Tay&#8217;s Me! rounded out the top 3. I know my daughter and I listened to Me! &#8230; <a href="https://cheerschopper.com/2019/12/13/top-songs-of-2019/" class="more-link">Continue reading <span class="screen-reader-text">Top Songs of&#160;2019</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>In early December Spotify compiled my <a href="https://open.spotify.com/playlist/37i9dQZF1Etjafe9Kfy3gZ">Top Songs of 2019</a>. Leaving aside there is a whole bloody month to go, the results were a little surprising. Venus by Bananarama took the top spot, followed by Battlefords by Hawksley Workman. Tay-Tay&#8217;s Me! rounded out the top 3. I know my daughter and I listened to Me! a lot. I would have picked Battlefords for most played. But Bananarama? I suspect the list may not entirely be in order.</p>
+
+
+
+<p>There&#8217;s some really great songs in the 100 best.  Befor We Were Together by Margaret Glaspy is an airworm I was happy to entertain. The various pieces from Blizzard Entertainment games got me through some tough spreadsheets. The National&#8217;s I Am Easy To Find contributed a lot of songs. </p>
+
+
+
+<p>Fucking Bananarama, though. I remember putting it on for the kids maybe once?</p>
+
+
+
+<p>Righto, Spotify. You do you.</p>
+
+
+
+<figure class="wp-block-embed-spotify wp-block-embed is-type-rich wp-embed-aspect-9-16 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="embed-spotify"><iframe title="Spotify Embed: Your Top Songs 2019" width="300" height="380" allowtransparency="true" frameborder="0" allow="encrypted-media" src="https://open.spotify.com/embed/playlist/37i9dQZF1Etjafe9Kfy3gZ"></iframe></div>
+</div></figure>
+]]></content:encoded>
+					
+		
+		
+		
+		<media:content url="https://0.gravatar.com/avatar/9e19cf505a1d8f88f97556d2287f456f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">Joe</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Buried Treasure</title>
+		<link>https://cheerschopper.com/2019/12/07/buried-treasure/</link>
+		
+		<dc:creator><![CDATA[Joe Mahoney]]></dc:creator>
+		<pubDate>Sat, 07 Dec 2019 04:27:00 +0000</pubDate>
+				<category><![CDATA[Video Games]]></category>
+		<category><![CDATA[indie games]]></category>
+		<category><![CDATA[rock paper shotgun]]></category>
+		<category><![CDATA[rps]]></category>
+		<category><![CDATA[steam]]></category>
+		<guid isPermaLink="false">http://cheerschopper.com/?p=379</guid>
+
+					<description><![CDATA[There&#8217;s anywhere from 20 to 40 video games released on Steam every day. That&#8217;s too many video games. John Walker, veteran games critic and founder of Rock Paper Shotgun is trying to find the really good indie games out that pile of what has to be a lot of average stuff. Buried Treasure is a &#8230; <a href="https://cheerschopper.com/2019/12/07/buried-treasure/" class="more-link">Continue reading <span class="screen-reader-text">Buried Treasure</span> <span class="meta-nav">&#8594;</span></a>]]></description>
+										<content:encoded><![CDATA[
+<figure class="wp-block-image size-large"><img data-attachment-id="384" data-permalink="https://cheerschopper.com/image-3/" data-orig-file="https://cheerschopper.files.wordpress.com/2019/12/image.png" data-orig-size="1357,643" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://cheerschopper.files.wordpress.com/2019/12/image.png?w=300" data-large-file="https://cheerschopper.files.wordpress.com/2019/12/image.png?w=1024" src="https://cheerschopper.files.wordpress.com/2019/12/image.png?w=1024" alt="" class="wp-image-384" srcset="https://cheerschopper.files.wordpress.com/2019/12/image.png?w=1024 1024w, https://cheerschopper.files.wordpress.com/2019/12/image.png?w=150 150w, https://cheerschopper.files.wordpress.com/2019/12/image.png?w=300 300w, https://cheerschopper.files.wordpress.com/2019/12/image.png?w=768 768w, https://cheerschopper.files.wordpress.com/2019/12/image.png 1357w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>There&#8217;s anywhere from 20 to 40 video games released on Steam every day. That&#8217;s too many video games.  John Walker, veteran games critic and founder of <a href="https://rockpapershotgun.com">Rock Paper Shotgun</a>  is trying to find the really good indie games out that pile of what has to be a lot of average stuff.</p>
+
+
+
+<p><a href="https://buried-treasure.org/">Buried Treasure</a> <a href="https://buried-treasure.org/2019/12/04/hello-let-me-explain/">is a Patreon backed site</a> highlighting the really good games that don&#8217;t get coverage from mainstream press. It&#8217;s a worthy endeavour. Hopefully some of these titles will get the boost they probably deserve.</p>
+]]></content:encoded>
+					
+		
+		
+		
+		<media:content url="https://0.gravatar.com/avatar/9e19cf505a1d8f88f97556d2287f456f?s=96&#38;d=identicon&#38;r=G" medium="image">
+			<media:title type="html">Joe</media:title>
+		</media:content>
+
+		<media:content url="https://cheerschopper.files.wordpress.com/2019/12/image.png?w=1024" medium="image" />
+	</item>
+	</channel>
+</rss>
