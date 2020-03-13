@@ -9,7 +9,7 @@ namespace :crawler do
         parsed_feed = Feedjira.parse(response.body)
         parsed_feed.entries.each do |e|
           item = feed.items.find_or_initialize_by(unique_identifier: e.entry_id)
-          if item.new_record? || item.source_item_changed?(e.title, e.content_html)
+          if item.new_record? || item.source_item_has_changed?(e.title, e.content)
             item.feed_id = feed.id
             item.unique_identifier = e.entry_id
             item.title = e.title
@@ -22,7 +22,6 @@ namespace :crawler do
           end
         end
       end
-      feed.last_crawled = DateTime.now
     end
     puts "Saved #{count} items"
   end
