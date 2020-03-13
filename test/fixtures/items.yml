@@ -3,6 +3,7 @@
 one:
   feed_id: 1
   title: MyString
+  unique_identifier: 1
   content_html: MyText
   url: MyString
   external_url: MyString
@@ -12,6 +13,7 @@ one:
 two:
   feed_id: 1
   title: MyString
+  unique_identifier: 2
   content_html: MyText
   url: MyString
   external_url: MyString
