@@ -17,7 +17,7 @@ class ItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create item" do
     assert_difference('Item.count') do
-      post items_url, params: { item: { content_html: @item.content_html, date_published: @item.date_published, external_url: @item.external_url, feed_id: @item.feed_id, summary: @item.summary, title: @item.title, url: @item.url } }
+      post items_url, params: { item: { content_html: @item.content_html, date_published: @item.date_published, external_url: @item.external_url, feed_id: @item.feed_id, summary: @item.summary, title: @item.title, unique_identifier: @item.unique_identifier, url: @item.url } }
     end
 
     assert_redirected_to item_url(Item.last)

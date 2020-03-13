@@ -10,7 +10,6 @@ class FeedTest < ActiveSupport::TestCase
     
   end
 
-
   test "name is updated if the source feed name has changed" do
     feed = Feed.first
     HTTParty.expects(:get).with(feed.url, format: :plain).returns(@response)

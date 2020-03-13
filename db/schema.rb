@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_13_080817) do
+ActiveRecord::Schema.define(version: 2020_03_08_081125) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,16 +24,6 @@ ActiveRecord::Schema.define(version: 2020_03_13_080817) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["status"], name: "index_feeds_on_status"
-  end
-
-  create_table "fetches", force: :cascade do |t|
-    t.integer "feed_id"
-    t.datetime "start"
-    t.datetime "finish"
-    t.boolean "successful"
-    t.text "message"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "items", force: :cascade do |t|

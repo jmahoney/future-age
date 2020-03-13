@@ -69,6 +69,6 @@ class ItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_params
-      params.require(:item).permit(:feed_id, :title, :content_html, :url, :external_url, :summary, :date_published)
+      params.require(:item).permit(:feed_id, :title, :content_html, :url, :external_url, :summary, :date_published, :unique_identifier)
     end
 end
