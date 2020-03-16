@@ -1,24 +1,28 @@
 class Feed < ApplicationRecord
   has_many :items
   
-  enum status: {active: 0, flaky: 2, inactive: 3}
+  enum status: {active: 0, flaky: 1, inactive: 2}
 
   def fetch
     response = HTTParty.get(self.url, format: :plain)
     if response.code == 200
-      parsed_feed = Feedjira.parse(response.body)
-      update_feed_details(parsed_feed.title, response.request)
+      source_feed = Feedjira.parse(response.body)
+      update_feed_details(source_feed, response)
     end
   end
 
   private 
-  def update_feed_details(name, request)
-    if self.name != name
-      self.name = name
+  def update_feed_details(source_feed, response)
+    if self.name != source_feed.title
+      self.name = source_feed.title
     end
 
-    if (request.redirect && request.uri != self.url)
-      self.url = request.uri
+    if (response.request.redirect && response.request.uri != self.url)
+      self.url = response.request.uri
+    end
+
+    if self.status == 'flaky' && response.code == 200
+      self.status = 'active'
     end
 
     if self.changed?

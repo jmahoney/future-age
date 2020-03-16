@@ -15,3 +15,11 @@ two:
   website_url: https://2.test.com/
   last_checked: 2020-03-08 07:39:59
   status: 0
+
+flaky:
+  id: 3
+  url: https://flaky.test.com/feed
+  name: Flaky
+  website_url: https://flaky.test.com/
+  last_checked: 2020-03-08 07:39:59
+  status: 1

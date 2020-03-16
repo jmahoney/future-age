@@ -11,17 +11,25 @@ class FeedTest < ActiveSupport::TestCase
   end
 
   test "name is updated if the source feed name has changed" do
-    feed = Feed.first
+    feed = feeds(:one)
     HTTParty.expects(:get).with(feed.url, format: :plain).returns(@response)
     feed.fetch
     assert_equal "cheers, chopper", feed.name
   end
 
   test "feed url is changed if source feed url has changed" do
-    feed = Feed.last
+    feed = feeds(:two)
     HTTParty.expects(:get).with(feed.url, format: :plain).returns(@response)
     feed.fetch
     assert_equal @new_feed_url, feed.url
+  end
+
+  test "a flaky feed is marked active if it has been crawled successfully" do
+    feed = feeds(:flaky)
+    assert_equal "flaky", feed.status
+    HTTParty.expects(:get).with(feed.url, format: :plain).returns(@response)
+    feed.fetch
+    assert_equal "active", feed.status
   end
 
 end
