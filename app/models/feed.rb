@@ -1,6 +1,6 @@
 class Feed < ApplicationRecord
   has_many :items
-  
+
   enum status: {active: 0, flaky: 1, inactive: 2}
 
   def fetch
@@ -8,10 +8,26 @@ class Feed < ApplicationRecord
     if response.code == 200
       source_feed = Feedjira.parse(response.body)
       update_feed_details(source_feed, response)
+    else
+      handle_failed_fetch
     end
   end
 
-  private 
+  private
+
+  def handle_failed_fetch
+    case self.status
+    when "active"
+      self.status = "flaky"
+    when "flaky"
+      if self.last_successful_check < 7.days.ago
+        self.status = "inactive"
+      end
+    end
+
+    self.save
+  end
+
   def update_feed_details(source_feed, response)
     if self.name != source_feed.title
       self.name = source_feed.title
@@ -21,8 +37,13 @@ class Feed < ApplicationRecord
       self.url = response.request.uri
     end
 
-    if self.status == 'flaky' && response.code == 200
-      self.status = 'active'
+    if response.code == 200
+      case self.status
+      when "flaky"
+        self.status = "active"
+      when "inactive"
+        self.status = "flaky"
+      end
     end
 
     if self.changed?

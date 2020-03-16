@@ -6,7 +6,7 @@ one:
   name: Site 1
   website_url: https://1.test.com/
   last_checked: 2020-03-08 07:39:59
-  status: 0
+  status: active
 
 two:
   id: 2
@@ -14,7 +14,7 @@ two:
   name: Site 2
   website_url: https://2.test.com/
   last_checked: 2020-03-08 07:39:59
-  status: 0
+  status: active
 
 flaky:
   id: 3
@@ -22,4 +22,29 @@ flaky:
   name: Flaky
   website_url: https://flaky.test.com/
   last_checked: 2020-03-08 07:39:59
-  status: 1
+  status: flaky
+
+inactive:
+  id: 4
+  url: https://inactive.test.com/feed
+  name: inactive
+  website_url: https://inactive.test.com/
+  last_checked: 2020-03-08 07:39:59
+  status: inactive
+
+active:
+  id: 5
+  url: https://active.test.com/feed
+  name: active
+  website_url: https://active.test.com/
+  last_checked: 2020-03-08 07:39:59
+  status: active
+
+flaky_for_a_week:
+  id: 6
+  url: https://flaky_for_a_week.test.com/feed
+  name: flaky
+  website_url: https://flaky_for_a_week.test.com/
+  last_checked: 2020-03-08 07:39:59
+  last_successful_check: 2020-03-08 07:39:59
+  status: flaky

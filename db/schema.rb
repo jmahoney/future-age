@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_16_075548) do
+ActiveRecord::Schema.define(version: 2020_03_16_082906) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,8 @@ ActiveRecord::Schema.define(version: 2020_03_16_075548) do
     t.integer "status", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.datetime "last_successful_crawl"
+    t.datetime "last_successful_check"
+    t.datetime "last_failed_check"
     t.index ["status"], name: "index_feeds_on_status"
   end
 
