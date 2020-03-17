@@ -19,3 +19,11 @@ two:
   external_url: MyString
   summary: MyText
   date_published: 2020-03-08 21:11:25
+
+terrible_games:
+  feed_id: 8
+  title: Existing item
+  content_html: Existing text
+  unique_identifier: http://cheerschopper.com/?p=431
+  url: http://cheerschopper.com/?p=431
+  date_published: 2020-03-08 21:11:25

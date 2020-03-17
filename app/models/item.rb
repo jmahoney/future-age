@@ -3,7 +3,7 @@ class Item < ApplicationRecord
   validates_presence_of :unique_identifier
   validates_uniqueness_of :unique_identifier, scope: :feed_id
 
-  def source_item_has_changed?(title, content_html)
-    return self.title != title || self.content_html != content_html
+  def source_item_has_changed?(item, source_item) #assuming the source item looks like feedjira item
+    return self.title != source_item.title || self.content_html != source_item.content
   end
 end

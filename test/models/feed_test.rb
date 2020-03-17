@@ -55,18 +55,17 @@ class FeedTest < ActiveSupport::TestCase
     feed.last_successful_check = 8.days.ago
     feed.save
     assert_equal "flaky", feed.status
-    response = stub(code: 404)
     HTTParty.expects(:get).with(feed.url, format: :plain).returns(@not_found_response)
     feed.fetch
     assert_equal "inactive", feed.status
   end
 
-  # test "an active feed that times out is marked as flaky" do
-  #   feed = feeds(:timeout)
-  #   assert.equal "active", feed.status
-  #   HTTParty.expects(:get).with(feed.url, format: :plain).raises(TimeoutError)
-  #   feed.fetch
-  #   assert_equal "flaky", feed.status
-  # end
+  test "an active feed that times out is marked as flaky" do
+    feed = feeds(:timeout)
+    assert_equal "active", feed.status
+    HTTParty.expects(:get).with(feed.url, format: :plain).raises(TimeoutError)
+    feed.fetch
+    assert_equal "flaky", feed.status
+  end
 
 end
