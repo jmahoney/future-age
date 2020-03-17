@@ -1,14 +1,21 @@
 class Feed < ApplicationRecord
+  include HTTParty
+  default_timeout 30
+
   has_many :items
 
   enum status: {active: 0, flaky: 1, inactive: 2}
 
   def fetch
-    response = HTTParty.get(self.url, format: :plain)
-    if response.code == 200
-      source_feed = Feedjira.parse(response.body)
-      update_feed_details(source_feed, response)
-    else
+    begin
+      response = HTTParty.get(self.url, format: :plain)
+      if response.code == 200
+        source_feed = Feedjira.parse(response.body)
+        update_feed_details(source_feed, response)
+      else
+        handle_failed_fetch
+      end
+    rescue
       handle_failed_fetch
     end
   end
