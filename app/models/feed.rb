@@ -18,7 +18,7 @@ class Feed < ApplicationRecord
         handle_failed_fetch
       end
     rescue Exception => e
-      logger("Exception fetching or parsing feed #{self.id}. #{e.message}")
+      logger.info("Exception fetching or parsing feed #{self.id}. #{e.message}")
       handle_failed_fetch
     end
   end
@@ -26,8 +26,8 @@ class Feed < ApplicationRecord
   private
 
   def handle_failed_fetch
-    self.last_unsuccessful_check = Time.now.utc
-    msg = "Feed #{feed.id} couldn't be fetched. "
+    self.last_failed_check = Time.now.utc
+    msg = "Feed #{self.id} couldn't be fetched. "
 
     case self.status
     when "active"
@@ -53,10 +53,10 @@ class Feed < ApplicationRecord
 
     case self.status
     when "flaky"
-      logger.log("Flaky feed #{self.id} fetched ok. Marking it as active")
+      logger.info("Flaky feed #{self.id} fetched ok. Marking it as active")
       self.status = "active"
     when "inactive"
-      logger.log("Inactive feed #{self.id} fetched ok. Marking it as active")
+      logger.info("Inactive feed #{self.id} fetched ok. Marking it as active")
       self.status = "flaky"
     end
 
@@ -80,7 +80,7 @@ class Feed < ApplicationRecord
           item.date_published = source_item.published
           item.save
         rescue Exception => e
-          logger.log("Couldn't import source item into feed #{self.id}. #{e.message}")
+          logger.info("Couldn't import source item into feed #{self.id}. #{e.message}")
         end
 
       end

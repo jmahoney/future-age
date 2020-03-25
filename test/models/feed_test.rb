@@ -15,14 +15,14 @@ class FeedTest < ActiveSupport::TestCase
   test "name is updated if the source feed name has changed" do
     feed = feeds(:one)
     HTTParty.expects(:get).with(feed.url, format: :plain).returns(@success_response)
-    feed.fetch
+    feed.import
     assert_equal "cheers, chopper", feed.name
   end
 
   test "feed url is changed if source feed url has changed" do
     feed = feeds(:two)
     HTTParty.expects(:get).with(feed.url, format: :plain).returns(@success_response)
-    feed.fetch
+    feed.import
     assert_equal @new_feed_url, feed.url
   end
 
@@ -30,7 +30,7 @@ class FeedTest < ActiveSupport::TestCase
     feed = feeds(:flaky)
     assert_equal "flaky", feed.status
     HTTParty.expects(:get).with(feed.url, format: :plain).returns(@success_response)
-    feed.fetch
+    feed.import
     assert_equal "active", feed.status
   end
 
@@ -38,7 +38,7 @@ class FeedTest < ActiveSupport::TestCase
     feed = feeds(:inactive)
     assert_equal "inactive", feed.status
     HTTParty.expects(:get).with(feed.url, format: :plain).returns(@success_response)
-    feed.fetch
+    feed.import
     assert_equal "flaky", feed.status
   end
 
@@ -46,7 +46,7 @@ class FeedTest < ActiveSupport::TestCase
     feed = feeds(:active)
     assert_equal "active", feed.status
     HTTParty.expects(:get).with(feed.url, format: :plain).returns(@not_found_response)
-    feed.fetch
+    feed.import
     assert_equal "flaky", feed.status
   end
 
@@ -56,7 +56,7 @@ class FeedTest < ActiveSupport::TestCase
     feed.save
     assert_equal "flaky", feed.status
     HTTParty.expects(:get).with(feed.url, format: :plain).returns(@not_found_response)
-    feed.fetch
+    feed.import
     assert_equal "inactive", feed.status
   end
 
@@ -64,7 +64,7 @@ class FeedTest < ActiveSupport::TestCase
     feed = feeds(:timeout)
     assert_equal "active", feed.status
     HTTParty.expects(:get).with(feed.url, format: :plain).raises(TimeoutError)
-    feed.fetch
+    feed.import
     assert_equal "flaky", feed.status
   end
 
