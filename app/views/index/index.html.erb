@@ -6,7 +6,9 @@
       <% end %>
 
       <div id="article-content">
-        <%= item.content_html.html_safe %>
+        <% if item.content_html.present? %>
+          <%= item.content_html.html_safe %>
+        <% end %>
       </div>
       <div id="article-meta">
         Permalink: <a href="<%= item.url %>" target="_blank"><%= item.url %></a>
