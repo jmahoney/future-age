@@ -1,17 +1,23 @@
 body {
   background-color: #fff;
-  color: #333;
-  margin: 33px; }
+  color: #000;
+  margin: 33px;
+  max-width: 1024px;
+ }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  color: #000;
+  font-family: "Segoe UI", helvetica, arial, sans-serif;
+  font-size: 18px;
   line-height: 18px; }
 
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px; }
+
+article {
+  margin-bottom: 33px;}
 
 a {
   color: #000; }
@@ -20,7 +26,7 @@ a:visited {
   color: #666; }
 
 a:hover {
-  color: #fff;
+  color: #666;
   background-color: #000; }
 
 th {

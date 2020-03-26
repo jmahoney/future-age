@@ -1,0 +1,19 @@
+<div id="items">
+  <% @items.each do |item| %>
+    <article>
+      <% if item.title.present? %>
+        <h2><a href="<%= item.url %>" target="_blank"><%= item.title %></a></h2>
+      <% end %>
+
+      <div id="article-content">
+        <%= item.content_html.html_safe %>
+      </div>
+      <div id="article-meta">
+        Permalink: <a href="<%= item.url %>" target="_blank"><%= item.url %></a>
+        <% if item.feed.name.present? && item.feed.website_url.present? %>
+        Site: <a href="<%= item.feed.website_url %>" target="_blank"><%= item.feed.name %></a>
+        <% end %>
+      </div>
+    </article>
+  <% end %>
+</div>
