@@ -1,7 +1,7 @@
 namespace :crawler do
   task :fetch => :environment do
     count = 0
-    Feed.where(status: :active).order(last_checked: :asc).limit(2).each do |feed|
+    Feed.where(status: [:active, :flaky]).order(last_checked: :asc).limit(3).each do |feed|
       feed.import
     end
   end
