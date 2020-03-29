@@ -3,16 +3,11 @@
     <div>
       <% if item.title.present? %>
         <a href="<%= item.url %>" target="_blank">
-          <h2 class="post-title">
+          <h1 class="post-title">
             <%= item.title %>
-          </h2>
+          </h1>
         </a>
       <% end %>
-
-      <% if item.content_html.present? %>
-        <%= item.content_html.html_safe %>
-      <% end %>
-
       <p class="post-meta">
         Posted
         <% if item.feed.name.present? %>
@@ -23,8 +18,14 @@
             <%= item.feed.name %>
           <% end %>
         <% end %>
-        <a href="<%= item.url %>" target="_blank"><%= time_ago_in_words(item.date_published) %></a>
+        <a href="<%= item.url %>" target="_blank"><%= time_ago_in_words(item.date_published) %> ago</a>
       </p>
+
+      <% if item.content_html.present? %>
+        <%= item.content_html.html_safe %>
+      <% end %>
+
+
     </div>
   </article>
   <hr>
