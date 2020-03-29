@@ -1,21 +1,31 @@
-<div id="items">
-  <% @items.each do |item| %>
-    <article>
+<% @items.each do |item| %>
+  <article>
+    <div>
       <% if item.title.present? %>
-        <h2><a href="<%= item.url %>" target="_blank"><%= item.title %></a></h2>
+        <a href="<%= item.url %>" target="_blank">
+          <h2 class="post-title">
+            <%= item.title %>
+          </h2>
+        </a>
       <% end %>
 
-      <div id="article-content">
-        <% if item.content_html.present? %>
-          <%= item.content_html.html_safe %>
+      <% if item.content_html.present? %>
+        <%= item.content_html.html_safe %>
+      <% end %>
+
+      <p class="post-meta">
+        Posted
+        <% if item.feed.name.present? %>
+          to
+          <% if item.feed.website_url.present? %>
+            <a href="<%= item.feed.website_url %>" target="_blank"><%= item.feed.name %></a>
+          <% else %>
+            <%= item.feed.name %>
+          <% end %>
         <% end %>
-      </div>
-      <div id="article-meta">
-        Permalink: <a href="<%= item.url %>" target="_blank"><%= item.url %></a>
-        <% if item.feed.name.present? && item.feed.website_url.present? %>
-        Site: <a href="<%= item.feed.website_url %>" target="_blank"><%= item.feed.name %></a>
-        <% end %>
-      </div>
-    </article>
-  <% end %>
-</div>
+        <a href="<%= item.url %>" target="_blank"><%= time_ago_in_words(item.date_published) %></a>
+      </p>
+    </div>
+  </article>
+  <hr>
+<% end %>
