@@ -1,13 +1,18 @@
 <% @items.each do |item| %>
   <article>
     <div>
-      <% if item.title.present? %>
-        <a href="<%= item.url %>" target="_blank">
-          <h1 class="post-title">
+      <h1 class="post-title">
+        <% if item.title.present? %>
+          <a href="<%= item.url %>" target="_blank">
             <%= item.title %>
-          </h1>
-        </a>
-      <% end %>
+          </a>
+        <% end %>
+        <% if item.starred %>
+          😍
+        <% else %>
+          😶
+        <% end %>
+      </h1>
       <p class="post-meta">
         Posted
         <% if item.feed.name.present? %>
@@ -19,14 +24,12 @@
           <% end %>
         <% end %>
         <a href="<%= item.url %>" target="_blank"><%= time_ago_in_words(item.date_published) %> ago</a>
+
       </p>
 
       <% if item.content_html.present? %>
         <%= item.content_html.html_safe %>
       <% end %>
-
-
     </div>
   </article>
-  <hr>
 <% end %>

@@ -1,3 +1,18 @@
 // Place all the styles related to the index controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+article {
+  margin-bottom: 100px;
+
+  .post-meta {
+    font-size: 16px;
+    padding:0px;
+    margin:0px 0px 6px 0px;
+  }
+
+  img {
+    margin: 12px 0px;
+  }
+}
+
