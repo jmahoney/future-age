@@ -27,3 +27,25 @@ terrible_games:
   unique_identifier: http://cheerschopper.com/?p=431
   url: http://cheerschopper.com/?p=431
   date_published: 2020-03-08 21:11:25
+
+
+unstarred:
+  title: MyString
+  unique_identifier: unstarred
+  content_html: MyText
+  url: MyString
+  external_url: MyString
+  summary: MyText
+  date_published: 2020-03-08 21:11:25
+  starred: false
+
+starred:
+  title: MyString
+  unique_identifier: starred
+  content_html: MyText
+  url: MyString
+  external_url: MyString
+  summary: MyText
+  date_published: 2020-03-08 21:11:25
+  starred: true
+

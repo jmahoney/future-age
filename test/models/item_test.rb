@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ItemTest < ActiveSupport::TestCase
+class ImportItemTest < ActiveSupport::TestCase
   def setup
     @item = Item.first
     @source_item = Feedjira::Parser::RSSEntry.new(title: "new title",
@@ -21,4 +21,20 @@ class ItemTest < ActiveSupport::TestCase
     refute @item.source_item_has_changed?(@item, @unchanged_source_item)
   end
 
+end
+
+class StarringItemTest < ActiveSupport::TestCase
+  test "toggle_starred marks an unstarred item as starred" do
+    item = items(:unstarred)
+    refute item.starred
+    item.toggle_starred
+    assert item.starred
+  end
+
+  test "toggle_starred marks an starred item as unstarred" do
+    item = items(:starred)
+    assert item.starred
+    item.toggle_starred
+    refute item.starred
+  end
 end
