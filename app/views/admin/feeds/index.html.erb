@@ -22,9 +22,9 @@
         <td><%= feed.website_url %></td>
         <td><%= feed.last_checked %></td>
         <td><%= feed.status %></td>
-        <td><%= link_to 'Show', feed %></td>
-        <td><%= link_to 'Edit', edit_feed_path(feed) %></td>
-        <td><%= link_to 'Destroy', feed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', [:admin, feed] %></td>
+        <td><%= link_to 'Edit', edit_admin_feed_path(feed) %></td>
+        <td><%= link_to 'Destroy', [:admin, feed], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Feed', new_feed_path %>
+<%= link_to 'New Feed', new_admin_feed_path %>

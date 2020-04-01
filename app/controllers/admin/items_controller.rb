@@ -1,4 +1,4 @@
-class ItemsController < ApplicationController
+class Admin::ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   # GET /items
@@ -28,7 +28,7 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.save
-        format.html { redirect_to @item, notice: 'Item was successfully created.' }
+        format.html { redirect_to [:admin, @item], notice: 'Item was successfully created.' }
         format.json { render :show, status: :created, location: @item }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ItemsController < ApplicationController
   def update
     respond_to do |format|
       if @item.update(item_params)
-        format.html { redirect_to @item, notice: 'Item was successfully updated.' }
+        format.html { redirect_to [:admin, @item], notice: 'Item was successfully updated.' }
         format.json { render :show, status: :ok, location: @item }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ItemsController < ApplicationController
   def destroy
     @item.destroy
     respond_to do |format|
-      format.html { redirect_to items_url, notice: 'Item was successfully destroyed.' }
+      format.html { redirect_to admin_items_url, notice: 'Item was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +69,6 @@ class ItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def item_params
-      params.require(:item).permit(:feed_id, :title, :content_html, :url, :external_url, :summary, :date_published, :unique_identifier)
+      params.require(:item).permit(:feed_id, :title, :content_html, :url, :external_url, :summary, :date_published, :unique_identifier, :starred)
     end
 end

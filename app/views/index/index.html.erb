@@ -7,8 +7,9 @@
             <%= item.title %>
           </a>
         <% end %>
+        <%= item.id %>
         <% if item.starred %>
-          😍
+          🤩
         <% else %>
           😶
         <% end %>
@@ -24,7 +25,6 @@
           <% end %>
         <% end %>
         <a href="<%= item.url %>" target="_blank"><%= time_ago_in_words(item.date_published) %> ago</a>
-
       </p>
 
       <% if item.content_html.present? %>

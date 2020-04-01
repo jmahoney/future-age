@@ -26,9 +26,9 @@
         <td><%= item.external_url %></td>
         <td><%= item.summary %></td>
         <td><%= item.date_published %></td>
-        <td><%= link_to 'Show', item %></td>
-        <td><%= link_to 'Edit', edit_item_path(item) %></td>
-        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', [:admin, item] %></td>
+        <td><%= link_to 'Edit', edit_admin_item_path(item) %></td>
+        <td><%= link_to 'Destroy', [:admin, item], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Item', new_item_path %>
+<%= link_to 'New Item', new_admin_item_path %>
