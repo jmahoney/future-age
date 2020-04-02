@@ -68,4 +68,12 @@ class FeedTest < ActiveSupport::TestCase
     assert_equal "flaky", feed.status
   end
 
+  test "a feed that has never been crawled can be marked as flaky" do
+    feed = feeds(:neverchecked)
+    assert_equal "active", feed.status
+    HTTParty.expects(:get).with(feed.url, format: :plain).returns(@not_found_response)
+    feed.import
+    assert_equal "flaky", feed.status
+  end
+
 end

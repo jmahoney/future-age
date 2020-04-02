@@ -34,7 +34,7 @@ class Feed < ApplicationRecord
       msg << "Marking it as flaky."
       self.status = "flaky"
     when "flaky"
-      if self.last_successful_check < 7.days.ago.utc
+      if self.last_successful_check.present? && self.last_successful_check < 7.days.ago.utc
         "It's been a week of failures. Marking it as inactive."
         self.status = "inactive"
       end
