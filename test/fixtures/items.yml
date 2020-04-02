@@ -30,6 +30,7 @@ terrible_games:
 
 
 unstarred:
+  feed_id: 1
   title: MyString
   unique_identifier: unstarred
   content_html: MyText
@@ -40,6 +41,7 @@ unstarred:
   starred: false
 
 starred:
+  feed_id: 1
   title: MyString
   unique_identifier: starred
   content_html: MyText
@@ -48,4 +50,3 @@ starred:
   summary: MyText
   date_published: 2020-03-08 21:11:25
   starred: true
-
