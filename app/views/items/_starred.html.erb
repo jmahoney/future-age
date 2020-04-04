@@ -1,0 +1,6 @@
+<%
+  text = "😶"
+  text = "🤩" if item.starred
+%>
+
+<%= link_to(text, toggle_starred_item_path(item), method: :patch, remote: true) %>

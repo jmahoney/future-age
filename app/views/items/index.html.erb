@@ -8,11 +8,7 @@
           </a>
         <% end %>
         <%= item.id %>
-        <% if item.starred %>
-          🤩
-        <% else %>
-          😶
-        <% end %>
+        <%= render "starred", item: item %>
       </h1>
       <p class="post-meta">
         Posted
