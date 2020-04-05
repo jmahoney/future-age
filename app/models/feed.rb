@@ -9,7 +9,7 @@ class Feed < ApplicationRecord
   def import
     begin
       self.last_checked = Time.now.utc
-      response = HTTParty.get(self.url, format: :plain)
+      response = HTTParty.get(self.url, format: :plain, headers: {"User-Agent" => "Httparty"})
       if response.code == 200
         source_feed = Feedjira.parse(response.body)
         update_details(source_feed, response)
