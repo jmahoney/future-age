@@ -14,14 +14,14 @@ class FeedTest < ActiveSupport::TestCase
 
   test "name is updated if the source feed name has changed" do
     feed = feeds(:one)
-    HTTParty.expects(:get).with(feed.url, format: :plain).returns(@success_response)
+    HTTParty.expects(:get).with(feed.url, format: :plain, headers: {"User-Agent" => "Httparty"}).returns(@success_response)
     feed.import
     assert_equal "cheers, chopper", feed.name
   end
 
   test "feed url is changed if source feed url has changed" do
     feed = feeds(:two)
-    HTTParty.expects(:get).with(feed.url, format: :plain).returns(@success_response)
+    HTTParty.expects(:get).with(feed.url, format: :plain, headers: {"User-Agent" => "Httparty"}).returns(@success_response)
     feed.import
     assert_equal @new_feed_url, feed.url
   end
@@ -29,7 +29,7 @@ class FeedTest < ActiveSupport::TestCase
   test "a flaky feed is marked active if it has been crawled successfully" do
     feed = feeds(:flaky)
     assert_equal "flaky", feed.status
-    HTTParty.expects(:get).with(feed.url, format: :plain).returns(@success_response)
+    HTTParty.expects(:get).with(feed.url, format: :plain, headers: {"User-Agent" => "Httparty"}).returns(@success_response)
     feed.import
     assert_equal "active", feed.status
   end
@@ -37,7 +37,7 @@ class FeedTest < ActiveSupport::TestCase
   test "an inactive feed is marked flaky if it has been crawled successfully" do
     feed = feeds(:inactive)
     assert_equal "inactive", feed.status
-    HTTParty.expects(:get).with(feed.url, format: :plain).returns(@success_response)
+    HTTParty.expects(:get).with(feed.url, format: :plain, headers: {"User-Agent" => "Httparty"}).returns(@success_response)
     feed.import
     assert_equal "flaky", feed.status
   end
@@ -45,7 +45,7 @@ class FeedTest < ActiveSupport::TestCase
   test "an active feed is marked as flaky if the feed cannot be fetched" do
     feed = feeds(:active)
     assert_equal "active", feed.status
-    HTTParty.expects(:get).with(feed.url, format: :plain).returns(@not_found_response)
+    HTTParty.expects(:get).with(feed.url, format: :plain, headers: {"User-Agent" => "Httparty"}).returns(@not_found_response)
     feed.import
     assert_equal "flaky", feed.status
   end
@@ -55,7 +55,7 @@ class FeedTest < ActiveSupport::TestCase
     feed.last_successful_check = 8.days.ago
     feed.save
     assert_equal "flaky", feed.status
-    HTTParty.expects(:get).with(feed.url, format: :plain).returns(@not_found_response)
+    HTTParty.expects(:get).with(feed.url, format: :plain, headers: {"User-Agent" => "Httparty"}).returns(@not_found_response)
     feed.import
     assert_equal "inactive", feed.status
   end
@@ -63,7 +63,7 @@ class FeedTest < ActiveSupport::TestCase
   test "an active feed that times out is marked as flaky" do
     feed = feeds(:timeout)
     assert_equal "active", feed.status
-    HTTParty.expects(:get).with(feed.url, format: :plain).raises(TimeoutError)
+    HTTParty.expects(:get).with(feed.url, format: :plain, headers: {"User-Agent" => "Httparty"}).raises(TimeoutError)
     feed.import
     assert_equal "flaky", feed.status
   end
@@ -71,7 +71,7 @@ class FeedTest < ActiveSupport::TestCase
   test "a feed that has never been crawled can be marked as flaky" do
     feed = feeds(:neverchecked)
     assert_equal "active", feed.status
-    HTTParty.expects(:get).with(feed.url, format: :plain).returns(@not_found_response)
+    HTTParty.expects(:get).with(feed.url, format: :plain, headers: {"User-Agent" => "Httparty"}).returns(@not_found_response)
     feed.import
     assert_equal "flaky", feed.status
   end
