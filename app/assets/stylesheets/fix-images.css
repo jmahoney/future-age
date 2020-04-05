@@ -1,4 +1,4 @@
-#posts img.wp-post-image {
+img.wp-post-image, img.size-full {
   height: 100%;
   width: 100%;
   object-fit: contain;
