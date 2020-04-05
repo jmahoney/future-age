@@ -7,6 +7,14 @@ class Item < ApplicationRecord
     return self.title != source_item.title || self.content_html != source_item.content
   end
 
+  def content
+    if self.content_html.present?
+      return self.content_html
+    end
+
+    return self.summary
+  end
+
   def toggle_starred
     self.starred = !self.starred
     self.save

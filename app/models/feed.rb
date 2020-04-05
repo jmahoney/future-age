@@ -75,6 +75,7 @@ class Feed < ApplicationRecord
           item.unique_identifier = source_item.entry_id
           item.title = source_item.title
           item.content_html = source_item.content
+          item.summary = source_item.summary if source_item.respond_to?(:summary)
           item.url = source_item.url
           item.external_url = source_item.external_url if source_item.respond_to?(:external_url)
           item.date_published = source_item.published
