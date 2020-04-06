@@ -1,4 +1,4 @@
-img.wp-post-image, img.size-full {
+img.wp-post-image, img.size-full, figure.wp-block-image img, img.alignnone {
   height: 100%;
   width: 100%;
   object-fit: contain;
