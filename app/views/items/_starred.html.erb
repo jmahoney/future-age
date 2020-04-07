@@ -3,4 +3,4 @@
   text = "🤩" if item.starred
 %>
 
-<%= link_to(text, toggle_starred_item_path(item), method: :patch, remote: true) %>
+<%= link_to(text, toggle_starred_item_path(item), id: "star-toggle-#{item.id}", method: :patch, remote: true, format: :json) %>

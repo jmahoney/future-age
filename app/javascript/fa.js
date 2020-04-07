@@ -1,3 +1,8 @@
 $( document ).ready(function() {
-  console.log( "ready!" );
-});
+  document.body.addEventListener('ajax:success', function(event) {
+    if (event.target.id.startsWith("star-toggle-")){
+      var emoji = data.starred ? "🤩" : "😶";
+      event.target.text = emoji;
+    }
+  })
+})
