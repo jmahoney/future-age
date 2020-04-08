@@ -242,6 +242,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  loofah
   mocha
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
