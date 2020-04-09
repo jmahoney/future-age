@@ -8,4 +8,28 @@ $( document ).on("turbolinks:load",function() {
       event.target.text = emoji;
     }
   })
+
+  document.body.addEventListener("keyup", function(event) {
+    if (event.isComposing || event.keyCode === 229) {
+      return;
+    }
+
+    var selectedArticle = $("article.selected").first();
+    var articleToMoveTo;
+
+    if (selectedArticle && (event.keyCode === 74 || event.keyCode === 75)) {
+      if (event.keyCode === 74) {
+        articleToMoveTo = selectedArticle.next();
+      } else {
+        articleToMoveTo = selectedArticle.prev();
+      }
+
+      if (articleToMoveTo.is('article')) {
+        selectedArticle.removeClass("selected");
+        articleToMoveTo.addClass("selected");
+        articleToMoveTo[0].scrollIntoView();
+      }
+    }
+
+  })
 })
