@@ -28,6 +28,15 @@ $( document ).on("turbolinks:load",function() {
         selectedArticle.removeClass("selected");
         articleToMoveTo.addClass("selected");
         articleToMoveTo[0].scrollIntoView();
+
+        var itemId = selectedArticle[0].id.replace("article-","");
+
+        $.ajax({
+          url: "items/" + itemId,
+          type: "patch",
+          data: {item: {read: true}},
+          dataType: "json"
+        });
       }
     }
 

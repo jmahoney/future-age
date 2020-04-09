@@ -1,5 +1,5 @@
 <% @items.each do |item| %>
-  <article id="article-<%=item.id%>%" <%if item == @items.first%>class="selected"<%end%>>
+  <article id="article-<%=item.id%>" <%if item == @items.first%>class="selected"<%end%>>
     <div>
       <h1 class="post-title">
         <% if item.title.present? %>
