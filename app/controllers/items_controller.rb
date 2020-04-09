@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
     @items = Item.includes(:feed)
                 .where("date_published < ?", start_date(params[:s]))
                 .where(read: false)
-                .order(date_published: :desc).limit(3)
+                .order(date_published: :desc).limit(30)
   end
 
   def toggle_starred
