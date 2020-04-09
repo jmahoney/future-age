@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   resources :items, only: [:index, :update] do
     member do
       patch 'toggle_starred'
-      patch 'toogle_read'
+    end
+    collection do
+      get 'starred'
     end
   end
 

@@ -2,10 +2,20 @@ class ItemsController < ApplicationController
   before_action :set_item, only: [:toggle_starred, :update]
 
   def index
+    @title = "New Items"
     @items = Item.includes(:feed)
                 .where("date_published < ?", start_date(params[:s]))
                 .where(read: false)
                 .order(date_published: :desc).limit(30)
+  end
+
+  def starred
+    @title = "Starred Items"
+    @items = Item.includes(:feed)
+                .where("date_published < ?", start_date(params[:s]))
+                .where(starred: true)
+                .order(date_published: :desc).limit(30)
+    render :index
   end
 
   def update
