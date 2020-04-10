@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :feeds
   end
 
+  resource :login
+
   resources :items, only: [:index, :update] do
     member do
       patch 'toggle_starred'

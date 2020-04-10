@@ -2,6 +2,10 @@
   <%= @title %>
 <% end %>
 
+<% if @public_mode %>
+<h1>PUBLIC MODE!</h1>
+<% end %>
+
 <% @items.each do |item| %>
   <article id="article-<%=item.id%>" <%if item == @items.first%>class="selected"<%end%>>
     <div>
