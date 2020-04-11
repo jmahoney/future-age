@@ -1,24 +1,9 @@
-# README
+# FUTURE AGE IS A FEED READER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Future Age is an RSS reader designed for [me](https://interative.co.nz) to use.
 
-Things you may want to cover:
+It is inspired by the intensions behind and years of using [Adam Mathes's original neko reader](https://github.com/jmahoney/neko) and, lately,  Robin Sloan's essay _[An app can be a home-cooked meal](https://www.robinsloan.com/notes/home-cooked-app/)_.
 
-* Ruby version
+Future Age is named after the Wilco song _In A Future Age_.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If you'd like to run a copy of futureage your self you'll need familiarity with Ruby On Rails. Ping me if you'd like help.
