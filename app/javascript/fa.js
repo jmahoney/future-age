@@ -1,13 +1,16 @@
 $( document ).on("turbolinks:load",function() {
-  document.body.addEventListener('ajax:success', function(event) {
-    var detail = event.detail;
-    var data = detail[0], status = detail[1], xhr = detail[2];
 
-    if (event.target.id.startsWith("star-toggle-")){
-      var emoji = data.starred ? "🤩" : "😶";
-      event.target.text = emoji;
-    }
-  })
+  if (!PUBLIC_MODE) {
+    document.body.addEventListener('ajax:success', function(event) {
+      var detail = event.detail;
+      var data = detail[0], status = detail[1], xhr = detail[2];
+
+      if (event.target.id.startsWith("star-toggle-")){
+        var emoji = data.starred ? "🤩" : "😶";
+        event.target.text = emoji;
+      }
+    })
+  }
 
   document.body.addEventListener("keyup", function(event) {
     if (event.isComposing || event.keyCode === 229) {
@@ -28,6 +31,10 @@ $( document ).on("turbolinks:load",function() {
         selectedArticle.removeClass("selected");
         articleToMoveTo.addClass("selected");
         articleToMoveTo[0].scrollIntoView();
+
+        if (PUBLIC_MODE) {
+          return;
+        }
 
         var itemId = selectedArticle[0].id.replace("article-","");
 

@@ -1,4 +1,4 @@
-class Admin::ItemsController < ApplicationController
+class Admin::ItemsController < Admin::AdminController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
   # GET /items

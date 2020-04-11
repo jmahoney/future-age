@@ -1,4 +1,4 @@
-class Admin::FeedsController < ApplicationController
+class Admin::FeedsController < Admin::AdminController
   before_action :set_feed, only: [:show, :edit, :update, :destroy]
 
   # GET /feeds

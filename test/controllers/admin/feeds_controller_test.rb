@@ -1,7 +1,12 @@
 require 'test_helper'
 
 class Admin::FeedsControllerTest < ActionDispatch::IntegrationTest
+  def login
+    post login_url, params: {password: ENV["FUTURE_AGE_USER_PASSWORD"]}
+  end
+
   setup do
+    login
     @feed = feeds(:one)
   end
 
