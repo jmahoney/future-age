@@ -5,6 +5,7 @@ class Feed < ApplicationRecord
   has_many :items
 
   enum status: {active: 0, flaky: 1, inactive: 2}
+  enum sanitisaton_strategy {none: 0, strict: 1}
 
   def import
     begin
