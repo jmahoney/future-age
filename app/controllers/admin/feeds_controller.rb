@@ -4,7 +4,7 @@ class Admin::FeedsController < Admin::AdminController
   # GET /feeds
   # GET /feeds.json
   def index
-    @feeds = Feed.all
+    @feeds = Feed.all.order(:name)
   end
 
   # GET /feeds/1
@@ -15,6 +15,7 @@ class Admin::FeedsController < Admin::AdminController
   # GET /feeds/new
   def new
     @feed = Feed.new
+    @feed.last_checked = 1.year.ago
   end
 
   # GET /feeds/1/edit
@@ -69,6 +70,6 @@ class Admin::FeedsController < Admin::AdminController
 
     # Only allow a list of trusted parameters through.
     def feed_params
-      params.require(:feed).permit(:url, :name, :website_url, :last_checked, :status)
+      params.require(:feed).permit(:url, :name, :website_url, :last_checked, :status, :sanitise)
     end
 end

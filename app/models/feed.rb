@@ -2,10 +2,9 @@ class Feed < ApplicationRecord
   include HTTParty
   default_timeout 30
 
-  has_many :items
+  has_many :items, dependent: :destroy
 
   enum status: {active: 0, flaky: 1, inactive: 2}
-  enum sanitisaton_strategy {none: 0, strict: 1}
 
   def import
     begin
