@@ -38,3 +38,10 @@ class StarringItemTest < ActiveSupport::TestCase
     refute item.starred
   end
 end
+
+class SanitisingItemTest < ActiveSupport::TestCase
+  test "content from feeds marked to be sanitised should be basically plain text" do
+    item = items(:whitewash)
+    assert_equal "testing", item.content
+  end
+end

@@ -73,3 +73,14 @@ neverchecked:
   name: cheerschopper
   website_url: https://cheerschopper.test.com/
   status: active
+
+
+sanitise:
+  id: 10
+  url: https://cheerschopper.test.com/feed
+  name: cheerschopper
+  website_url: https://cheerschopper.test.com/
+  last_checked: 2020-03-08 07:39:59
+  last_successful_check: 2020-03-08 07:39:59
+  status: active
+  sanitise: true

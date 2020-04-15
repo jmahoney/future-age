@@ -18,7 +18,7 @@
       <tr>
         <td><%= feed.url %></td>
         <td><% if feed.website_url.present?%><%= link_to feed.name, feed.website_url %><% else %><%= feed.name %><% end %></td>
-        <td><%= time_ago_in_words(feed.last_checked) %> ago</td>
+        <td><% if feed.last_checked.present? %><%= time_ago_in_words(feed.last_checked) %> ago<% end %></td>
         <td><%= feed.status %></td>
         <td><%= link_to 'Show', [:admin, feed] %></td>
         <td><%= link_to 'Edit', edit_admin_feed_path(feed) %></td>

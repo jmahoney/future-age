@@ -1,4 +1,6 @@
 class Item < ApplicationRecord
+  include Sanitiser
+
   belongs_to :feed
   validates_presence_of :unique_identifier
   validates_uniqueness_of :unique_identifier, scope: :feed_id
@@ -8,11 +10,9 @@ class Item < ApplicationRecord
   end
 
   def content
-    if self.content_html.present?
-      return self.content_html
-    end
-
-    return self.summary
+    html = self.content_html.present? ? self.content_html : self.summary
+    sanitisation_strategy = self.feed.sanitise ? :strict : :basic
+    return sanitise(html, sanitisation_strategy)
   end
 
   def toggle_starred

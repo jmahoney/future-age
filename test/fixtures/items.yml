@@ -50,3 +50,15 @@ starred:
   summary: MyText
   date_published: 2020-03-08 21:11:25
   starred: true
+
+
+whitewash:
+  feed_id: 10
+  title: MyString
+  unique_identifier: starred
+  content_html: <script>this is a script</script>testing
+  url: MyString
+  external_url: MyString
+  summary: MyText
+  date_published: 2020-03-08 21:11:25
+  starred: true
