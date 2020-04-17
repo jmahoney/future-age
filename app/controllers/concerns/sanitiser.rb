@@ -5,7 +5,7 @@ module Sanitiser
     if method == :strict
       return strict(html)
     else
-      return html
+      return default(html)
     end
   end
 
@@ -15,5 +15,21 @@ module Sanitiser
     fragment = Loofah.fragment(html).scrub!(:whitewash)
     return fragment.to_s
   end
+
+
+  def default(html)
+    image_attr_scrubber = Loofah::Scrubber.new do |node|
+      whitelist = ["alt", "src"]
+      if node.name == "img"
+        node.attributes.each do |attr|
+          node.remove_attribute(attr.first) unless whitelist.include?(attr.first)
+        end
+      end
+    end
+
+    fragment = Loofah.fragment(html).scrub!(image_attr_scrubber)
+    return fragment.to_s
+  end
+
 
 end

@@ -44,4 +44,10 @@ class SanitisingItemTest < ActiveSupport::TestCase
     item = items(:whitewash)
     assert_equal "testing", item.content
   end
+
+  test "img tags only have an src and alt attributes" do
+    item = items(:imgscrubber)
+    expected =  "<img src=\"image.jpg\" alt=\"this is the alt text\"> The image had width and height attributes"
+    assert_equal expected, item.content
+  end
 end

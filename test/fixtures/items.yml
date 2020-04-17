@@ -55,8 +55,20 @@ starred:
 whitewash:
   feed_id: 10
   title: MyString
-  unique_identifier: starred
+  unique_identifier: whitewash
   content_html: <script>this is a script</script>testing
+  url: MyString
+  external_url: MyString
+  summary: MyText
+  date_published: 2020-03-08 21:11:25
+  starred: true
+
+
+imgscrubber:
+  feed_id: 1
+  title: MyString
+  unique_identifier: imgscrubber
+  content_html: "<img height=\"200\" width=\"200\" src=\"image.jpg\" alt=\"this is the alt text\"> The image had width and height attributes"
   url: MyString
   external_url: MyString
   summary: MyText
