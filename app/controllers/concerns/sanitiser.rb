@@ -27,7 +27,18 @@ module Sanitiser
       end
     end
 
-    fragment = Loofah.fragment(html).scrub!(image_attr_scrubber)
+    div_attr_scrubber = Loofah::Scrubber.new do |node|
+      if node.name == "div"
+        node.attributes.each do |attr|
+          node.remove_attribute(attr.first)
+        end
+      end
+    end
+
+    fragment = Loofah.fragment(html)
+                    .scrub!(image_attr_scrubber)
+                    .scrub!(div_attr_scrubber)
+
     return fragment.to_s
   end
 

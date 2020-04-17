@@ -74,3 +74,15 @@ imgscrubber:
   summary: MyText
   date_published: 2020-03-08 21:11:25
   starred: true
+
+
+divscrubber:
+  feed_id: 1
+  title: MyString
+  unique_identifier: divscribber
+  content_html: "<div style=\"width:10px\" onclick=\"test\" class=\"foo bar baz\" id=\"fsdfsd\">test</div>"
+  url: MyString
+  external_url: MyString
+  summary: MyText
+  date_published: 2020-03-08 21:11:25
+  starred: true

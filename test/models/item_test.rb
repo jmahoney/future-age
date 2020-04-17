@@ -50,4 +50,10 @@ class SanitisingItemTest < ActiveSupport::TestCase
     expected =  "<img src=\"image.jpg\" alt=\"this is the alt text\"> The image had width and height attributes"
     assert_equal expected, item.content
   end
+
+  test "div tags have no attributes" do
+    item = items(:divscrubber)
+    expected = "<div>test</div>"
+    assert_equal expected, item.content
+  end
 end

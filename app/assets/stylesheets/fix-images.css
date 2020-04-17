@@ -1,9 +1,9 @@
-img.wp-post-image, img.size-full, figure.wp-block-image img, img.alignnone {
+article img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  max-width: 730px;
 }
-
+/*
 article {
   overflow: hidden;
-}
+} */
