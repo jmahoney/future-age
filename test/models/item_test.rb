@@ -39,37 +39,37 @@ class StarringItemTest < ActiveSupport::TestCase
   end
 end
 
-# class SanitisingItemTest < ActiveSupport::TestCase
-#   test "content from feeds marked to be sanitised should be basically plain text" do
-#     item = items(:whitewash)
-#     assert_equal "testing", item.content
-#   end
+class SanitisingItemTest < ActiveSupport::TestCase
+  test "content from feeds marked to be sanitised should be basically plain text" do
+    item = items(:whitewash)
+    assert_equal "testing", item.content
+  end
 
-#   test "img tags only have an src and alt attributes" do
-#     item = items(:imgscrubber)
-#     expected =  "<img src=\"https://test.com/image.jpg\" alt=\"this is the alt text\"> The image had width and height attributes"
-#     assert_equal expected, item.content
-#   end
+  test "img tags only have an src and alt attributes" do
+    item = items(:imgscrubber)
+    expected =  "<img src=\"https://test.com/image.jpg\" alt=\"this is the alt text\"> The image had width and height attributes"
+    assert_equal expected, item.content
+  end
 
-#   test "div tags have no attributes" do
-#     item = items(:divscrubber)
-#     expected = "<div>test</div>"
-#     assert_equal expected, item.content
-#   end
-# end
+  test "div tags have no attributes" do
+    item = items(:divscrubber)
+    expected = "<div>test</div>"
+    assert_equal expected, item.content
+  end
+end
 
 class ResolvingRelativeUrlsTest < ActiveSupport::TestCase
-  # test "relative urls on image tags are resolved to the root when website url doesnt specify a path" do
-  #   item = items(:relativeimagewebsitenopath)
-  #   expected = "<img src=\"https://1.test.com/relative1.jpg\"><img src=\"https://1.test.com/relative2.jpg\">"
-  #   assert_equal expected, item.content
-  # end
+  test "relative urls on image tags are resolved to the root when website url doesnt specify a path" do
+    item = items(:relativeimagewebsitenopath)
+    expected = "<img src=\"https://1.test.com/relative1.jpg\"><img src=\"https://1.test.com/relative2.jpg\">"
+    assert_equal expected, item.content
+  end
 
-  # test "absolute urls are left alone" do
-  #   item = items(:absoluteimage)
-  #   expected = "<img src=\"https://1.test.com/relative1.jpg\"><img src=\"https://1.test.com/relative2.jpg\">"
-  #   assert_equal expected, item.content
-  # end
+  test "absolute urls are left alone" do
+    item = items(:absoluteimage)
+    expected = "<img src=\"https://1.test.com/relative1.jpg\"><img src=\"https://1.test.com/relative2.jpg\">"
+    assert_equal expected, item.content
+  end
 
   test "relative urls starting with a slash resolve to root when website url specifies a path" do
     item = items(:relativeimagepointingtorootwebsitehaspath)
