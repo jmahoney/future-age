@@ -1,5 +1,6 @@
 class Item < ApplicationRecord
   include Sanitiser
+  include RelativeUrlResolver
 
   belongs_to :feed
   validates_presence_of :unique_identifier
@@ -12,7 +13,10 @@ class Item < ApplicationRecord
   def content
     html = self.content_html.present? ? self.content_html : self.summary
     sanitisation_strategy = self.feed.sanitise ? :strict : :basic
-    return sanitise(html, sanitisation_strategy)
+
+    html =  sanitise(html, sanitisation_strategy)
+    html =  resolve_urls(html, feed.website_url) if feed.website_url.present?
+    return html
   end
 
   def toggle_starred

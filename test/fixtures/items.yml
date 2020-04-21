@@ -63,24 +63,66 @@ whitewash:
   date_published: 2020-03-08 21:11:25
   starred: true
 
-
 imgscrubber:
   feed_id: 1
   title: MyString
   unique_identifier: imgscrubber
-  content_html: "<img height=\"200\" width=\"200\" src=\"image.jpg\" alt=\"this is the alt text\"> The image had width and height attributes"
+  content_html: "<img height=\"200\" width=\"200\" src=\"https://test.com/image.jpg\" alt=\"this is the alt text\"> The image had width and height attributes"
   url: MyString
   external_url: MyString
   summary: MyText
   date_published: 2020-03-08 21:11:25
   starred: true
 
-
 divscrubber:
   feed_id: 1
   title: MyString
   unique_identifier: divscribber
   content_html: "<div style=\"width:10px\" onclick=\"test\" class=\"foo bar baz\" id=\"fsdfsd\">test</div>"
+  url: MyString
+  external_url: MyString
+  summary: MyText
+  date_published: 2020-03-08 21:11:25
+  starred: true
+
+relativeimagewebsitenopath:
+  feed_id: 1
+  title: MyString
+  unique_identifier: relativeimage
+  content_html: "<img src=\"relative1.jpg\"><img src=\"/relative2.jpg\">"
+  url: MyString
+  external_url: MyString
+  summary: MyText
+  date_published: 2020-03-08 21:11:25
+  starred: true
+
+absoluteimage:
+  feed_id: 1
+  title: MyString
+  unique_identifier: absoluteimage
+  content_html: "<img src=\"https://1.test.com/relative1.jpg\"><img src=\"https://1.test.com/relative2.jpg\">"
+  url: MyString
+  external_url: MyString
+  summary: MyText
+  date_published: 2020-03-08 21:11:25
+  starred: true
+
+relativeimagepointingtorootwebsitehaspath:
+  feed_id: 11
+  title: MyString
+  unique_identifier: relativeimagepointingtorootwebsitehaspath
+  content_html: "<img src=\"/relative2.jpg\">"
+  url: MyString
+  external_url: MyString
+  summary: MyText
+  date_published: 2020-03-08 21:11:25
+  starred: true
+
+relativeimagepointingpointingtocurrentdirwebsitehaspath:
+  feed_id: 11
+  title: MyString
+  unique_identifier: relativeimagepointingpointingtocurrentdirwebsitehaspath
+  content_html: "<img src=\"relative2.jpg\">"
   url: MyString
   external_url: MyString
   summary: MyText

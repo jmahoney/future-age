@@ -35,9 +35,7 @@ module Sanitiser
       end
     end
 
-    fragment = Loofah.fragment(html)
-                    .scrub!(image_attr_scrubber)
-                    .scrub!(div_attr_scrubber)
+    fragment = Loofah.fragment(html).scrub!(image_attr_scrubber).scrub!(div_attr_scrubber)
 
     return fragment.to_s
   end
