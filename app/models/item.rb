@@ -14,8 +14,9 @@ class Item < ApplicationRecord
     html = self.content_html.present? ? self.content_html : self.summary
     sanitisation_strategy = self.feed.sanitise ? :strict : :basic
 
-    html =  sanitise(html, sanitisation_strategy)
     html =  resolve_urls(html, feed.website_url) if feed.website_url.present?
+    html =  sanitise(html, sanitisation_strategy)
+
     return html
   end
 
