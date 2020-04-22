@@ -19,7 +19,7 @@ module Sanitiser
 
   def default(html)
     image_attr_scrubber = Loofah::Scrubber.new do |node|
-      whitelist = ["alt", "src"]
+      whitelist = ["alt", "src", "width", "height", "style"]
       if node.name == "img"
         node.attributes.each do |attr|
           node.remove_attribute(attr.first) unless whitelist.include?(attr.first)

@@ -67,7 +67,7 @@ imgscrubber:
   feed_id: 1
   title: MyString
   unique_identifier: imgscrubber
-  content_html: "<img height=\"200\" width=\"200\" src=\"https://test.com/image.jpg\" alt=\"this is the alt text\"> The image had width and height attributes"
+  content_html: "<img src=\"https://test.com/image.jpg\" alt=\"this is the alt text\" width=\"20\" height=\"20\" class=\"blah\" onclick=\"foo\"> The image had width and height attributes"
   url: MyString
   external_url: MyString
   summary: MyText
