@@ -36,7 +36,15 @@
 <% end %>
 <% unless @items.empty? %>
   <div>
-    <h3><%= link_to  "🤞🤞 More items", items_url(s: @items.last.date_published) %></h3>
+
+    <h3>
+      <% if action_name == "starred" %>
+        <%= link_to  "🤩 More", starred_items_url(s: @items.last.date_published) %>
+      <% else %>
+        <%= link_to  "🤞 More", items_url(s: @items.last.date_published) %>
+      <% end %>
+    </h3>
   </div>
+  <br/><br/>
 <% end %>
 
