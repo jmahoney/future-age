@@ -12,6 +12,7 @@ class LoginsController < ApplicationController
     if ENV["FUTURE_AGE_USER_PASSWORD"].present?
       if params[:password] == ENV["FUTURE_AGE_USER_PASSWORD"]
         session[:logged_in] = true
+        cookies.permanent[:logged_in] = true
         redirect_to root_url
         return
       end
@@ -21,6 +22,7 @@ class LoginsController < ApplicationController
 
   def destroy
     session.delete(:logged_in)
+    cookies.delete(:logged_in)
     redirect_to root_url
   end
 end
