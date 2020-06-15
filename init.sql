@@ -1,0 +1,2 @@
+CREATE USER futureage;
+ALTER USER futureage WITH SUPERUSER;
