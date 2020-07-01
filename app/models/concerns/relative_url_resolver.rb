@@ -4,7 +4,7 @@ module RelativeUrlResolver
   def resolve_urls(html, website_url)
 
     relative_url_scrubber = Loofah::Scrubber.new do |node|
-      if node.name == "img"
+      if ["img", "a"].include?(node.name) 
         node.attributes.find_all{|a| a[0] == "src"}.each do |src|
           absolute_url = absolute(src[1].to_s, website_url)
           if absolute_url != src[0]
