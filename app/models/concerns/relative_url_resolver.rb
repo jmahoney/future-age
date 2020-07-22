@@ -21,24 +21,24 @@ module RelativeUrlResolver
 
   private
 
-  def absolute(img, website_url)
-    uri = URI.parse(img)
-    return img if uri.scheme.present?
+  def absolute(src, website_url)
+    uri = URI.parse(src)
+    return src if uri.scheme.present?
 
     uri = URI.parse(website_url)
 
-    if img.start_with?("/")
-      return "#{uri.scheme}://#{uri.host}#{img}"
+    if src.start_with?("/")
+      return "#{uri.scheme}://#{uri.host}#{src}"
     end
 
     if uri.path.present? && uri.path != "/"
 
-      full_path = uri.path.end_with?("/") ? "#{uri.path}#{img}" : "#{uri.path}/#{img}"
+      full_path = uri.path.end_with?("/") ? "#{uri.path}#{src}" : "#{uri.path}/#{src}"
 
       return "#{uri.scheme}://#{uri.host}#{full_path}"
     end
 
-    return "#{uri.scheme}://#{uri.host}/#{img}"
+    return "#{uri.scheme}://#{uri.host}/#{src}"
   end
 
 end
