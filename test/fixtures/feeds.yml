@@ -74,7 +74,6 @@ neverchecked:
   website_url: https://cheerschopper.test.com/
   status: active
 
-
 sanitise:
   id: 10
   url: https://cheerschopper.test.com/feed
@@ -85,7 +84,6 @@ sanitise:
   status: active
   sanitise: true
 
-
 websiteurlwithpath:
   id: 11
   url: https://cheerschopper.test.com/feed
@@ -95,3 +93,23 @@ websiteurlwithpath:
   last_successful_check: 2020-03-08 07:39:59
   status: active
   sanitise: false
+
+nowebsiteurl:
+  id: 12
+  url: https://cheerschopper.test.com/feed
+  name: cheerschopper
+  website_url: 
+  last_checked: 2020-03-08 07:39:59
+  last_successful_check: 2020-03-08 07:39:59
+  status: active
+  sanitise: false
+
+feedburnerurl:
+    id: 13
+    url: https://feeds.feedburner.com/feed
+    name: cheerschopper
+    website_url: 
+    last_checked: 2020-03-08 07:39:59
+    last_successful_check: 2020-03-08 07:39:59
+    status: active
+    sanitise: false

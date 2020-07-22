@@ -23,6 +23,15 @@ class Feed < ApplicationRecord
     end
   end
 
+  def maybe_url
+    return self.website_url unless self.website_url.blank?
+
+    return "" if self.url.include?("feeds.feedburner.com")
+
+    uri = URI.parse(self.url)
+    return "#{uri.scheme}://#{uri.host}"
+  end
+
   private
 
   def handle_failed_fetch

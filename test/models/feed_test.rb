@@ -76,4 +76,19 @@ class FeedTest < ActiveSupport::TestCase
     assert_equal "flaky", feed.status
   end
 
+  test "maybe_url returns website_url when website_url is populated" do
+    feed = feeds(:websiteurlwithpath)
+    assert_equal "https://cheerschopper.test.com/blog", feed.maybe_url
+  end
+
+  test "maybe_url returns blank when website_url is blank and url is a feedburner url" do
+    feed = feeds(:feedburnerurl)
+    assert_equal "", feed.maybe_url
+  end
+
+  test "maybe_url returns a url with the protocol and host of the url when website_url is blank" do
+    feed = feeds(:nowebsiteurl)
+    assert_equal "https://cheerschopper.test.com", feed.maybe_url
+  end
+
 end
