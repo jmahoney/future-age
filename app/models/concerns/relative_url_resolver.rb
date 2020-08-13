@@ -22,10 +22,10 @@ module RelativeUrlResolver
   private
 
   def absolute(src, website_url)
-    uri = URI.parse(src)
+    uri = Addressable::URI.parse(src)
     return src if uri.scheme.present?
 
-    uri = URI.parse(website_url)
+    uri = Addressable::URI.parse(website_url)
 
     if src.start_with?("/")
       return "#{uri.scheme}://#{uri.host}#{src}"
