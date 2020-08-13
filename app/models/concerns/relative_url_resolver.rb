@@ -25,6 +25,10 @@ module RelativeUrlResolver
     uri = Addressable::URI.parse(src)
     return src if uri.scheme.present?
 
+    if src.start_with?("//") 
+      return "https:#{src}"
+    end
+
     uri = Addressable::URI.parse(website_url)
 
     if src.start_with?("/")

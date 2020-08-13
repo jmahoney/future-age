@@ -128,3 +128,14 @@ relativeimagepointingpointingtocurrentdirwebsitehaspath:
   summary: MyText
   date_published: 2020-03-08 21:11:25
   starred: true
+
+absoluteurlwithoutascheme:
+  feed_id: 11
+  title: MyString
+  unique_identifier: absoluteurlwithoutascheme
+  content_html: "<img src=\"//cheerschopper.test.com/absolute.jpg\">"
+  url: MyString
+  external_url: MyString
+  summary: MyText
+  date_published: 2020-03-08 21:11:25
+  starred: true

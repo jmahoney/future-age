@@ -82,4 +82,10 @@ class ResolvingRelativeUrlsTest < ActiveSupport::TestCase
     expected = "<img src=\"https://cheerschopper.test.com/blog/relative.jpg\">"
     assert_equal expected, item.content
   end
+
+  test "absolute urls without a scheme get https added" do
+    item = items(:absoluteurlwithoutascheme)
+    expected = "<img src=\"https://cheerschopper.test.com/absolute.jpg\">"
+    assert_equal expected, item.content
+  end
 end
