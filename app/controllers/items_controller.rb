@@ -14,7 +14,7 @@ class ItemsController < ApplicationController
     @items = Item.includes(:feed)
                 .where("date_published < ?", start_date(params[:s]))
                 .where(starred: true)
-                .order(date_published: :desc).limit(30)
+                .order(updated_at: :desc).limit(30)
     render :index
   end
 
