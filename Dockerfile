@@ -1,4 +1,4 @@
-FROM ruby:2.7.1-alpine
+FROM ruby:2.7.2-alpine
 ENV BUNDLER_VERSION=2.1.4
 RUN apk add --update --no-cache \
       binutils-gold \
@@ -29,7 +29,7 @@ RUN gem install bundler -v 2.1.4
 WORKDIR /app
 COPY Gemfile Gemfile.lock ./
 RUN bundle config build.nokogiri --use-system-libraries
-RUN bundle check || bundle install
+RUN bundle check || bundle update || bundle install
 COPY package.json yarn.lock ./
 RUN yarn install --check-files
 COPY . ./
