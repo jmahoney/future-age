@@ -1,6 +1,8 @@
-# FUTURE AGE IS A FEED READER
+# FUTURE AGE WAS A FEED READER
 
-Future Age is an RSS reader designed for [me](https://interative.co.nz) to use.
+
+
+Future Age was an RSS reader designed for [me](https://interative.co.nz) to use. AS of Aprol 2021 I've retired it in favour of [Fraidycat](https://fraidyc.at/).
 
 It is inspired by the intensions behind and years of using [Adam Mathes's original neko reader](https://github.com/jmahoney/neko) and, lately,  Robin Sloan's essay _[An app can be a home-cooked meal](https://www.robinsloan.com/notes/home-cooked-app/)_.
 
